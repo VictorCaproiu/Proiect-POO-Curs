@@ -182,11 +182,12 @@ void Lab1::Update(float deltaTimeSeconds)
             text_renderer->RenderText("You guessed it!", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
             RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { 5, 5 }), glm::vec3(0.4f, 0, 0.99f));
             text_renderer->RenderText("Now enter the secret code, to escape!", 200, 130, 0.2f, {0.99, 0.99, 0.99});
+
         }
         else
         {
             sprintf(text, "Secret code: %d", magicNum % 100);
-            text_renderer->RenderText("Actiunea care joaca un rol crucial in cadrul unui proiect.", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });  // 190
+            text_renderer->RenderText("Actiunea care joaca un rol crucial in cadrul unui proiect.", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
         }
     }
     else
@@ -205,26 +206,25 @@ void Lab1::FrameEnd()
 {
 }
 
-
 void Lab1::OnInputUpdate(float deltaTime, int mods)
 {
 	if (player->isInWindow(corners[0], corners[1]))
 	{
         if (window->KeyHold(GLFW_KEY_A))
         {
-            player->moveLeft(deltaTime * 10);
+            player->moveLeft(deltaTime * 15);
         }
         if (window->KeyHold(GLFW_KEY_D))
         {
-            player->moveRight(deltaTime * 10);
+            player->moveRight(deltaTime * 15);
         }
         if (window->KeyHold(GLFW_KEY_W))
         {
-            player->moveUp(deltaTime * 10);
+            player->moveUp(deltaTime * 15);
         }
         if (window->KeyHold(GLFW_KEY_S))
         {
-            player->moveDown(deltaTime * 10);
+            player->moveDown(deltaTime * 15);
         }
 	}
     else
@@ -260,7 +260,7 @@ void Lab1::OnKeyPress(int key, int mods)
             chars_pressed.push_back(key);
         }
 
-        std::vector<char> question = { 'C', 'O', 'M' ,'U', 'N', 'I', 'C', 'A', 'R', 'E' };  //263
+        std::vector<char> question = { 'C', 'O', 'M' ,'U', 'N', 'I', 'C', 'A', 'R', 'E' };
         int num = 0;
 
         for (auto ch: question)
@@ -279,7 +279,7 @@ void Lab1::OnKeyPress(int key, int mods)
             checkedWord = true;
         }
 
-        if (pressedChars == question8.size())
+        if (pressedChars == question.size())
         {
             chars_pressed.clear();
         }
