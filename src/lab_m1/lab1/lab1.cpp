@@ -279,7 +279,7 @@ void Lab1::OnKeyPress(int key, int mods)
             checkedWord = true;
         }
 
-        if (pressedChars == question8.size())
+        if (pressedChars == question.size())
         {
             chars_pressed.clear();
         }
