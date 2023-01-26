@@ -3,7 +3,8 @@
 #include "player.h"
 #include "components/simple_scene.h"
 #include "components/text_renderer.h"
-
+#include <string>
+#include <vector>
 
 namespace m1
 {
