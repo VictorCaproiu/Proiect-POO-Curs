@@ -43,7 +43,11 @@ namespace m1
         int capturedCircles;
         int magicNum;
 
+        int intrebare_curenta, q1, q2, q3;
+
         bool checkedWord;
+        bool checkedWord1;
+        bool checkedWord2;
 
         glm::vec2 deliveryPos1 = glm::vec2(-28, 15);
         glm::vec2 deliveryPos2 = glm::vec2(-23, 15);

@@ -4,9 +4,35 @@
 #include <iostream>
 #include <glm/gtx/matrix_transform_2d.hpp>
 
+#include <windows.h>
+#include <shellapi.h>
+
+
 using namespace std;
 using namespace m1;
 
+vector<string> questions = { "Recruitment is based on the manager's capacity to identify the ______  of the product.",
+                            "The final decision-making stage in the recruitment process is called _______",
+                            "The two types of ________ evaluation are: individual and team-based.",
+                            "Which organizational theory states that workers are motivated by a sense of commitment?",
+                            "What is the name of the graph that indicates the level of involvement and responsibility of employees?",
+                            "What percentage of the time does a manager spend communicating?",
+                            "The group in charge of reviewing the technical specifications and authorizing changes is called:_____ _____",
+                            "The number of steps necessary to establish a communication plan.",
+                            "The extended systematic model of risk management includes _ steps.",
+                            "The _____ represents the various risk categories that can trigger negative events." };
+
+vector<string> answers = {
+    "REQUIREMENTS",
+    "SELECTION",
+    "PERFORMANCE",
+    "Z THEORY",
+    "RESPONSIBLE ACCOUNTABLE CONSULTED INFORMED",
+    "805",
+    "CONTROL BOARD",
+    "8",
+    "8",
+    "RISK SOURCE" };
 
 constexpr int CAPTURED = 50;
 
@@ -24,22 +50,35 @@ Lab1::Lab1()
     corners = { 29, 16 };
     capturedCircles = 0;
     checkedWord = false;
+    checkedWord1 = false;
+    checkedWord2 = false;
+    intrebare_curenta = 0;
 
     text_renderer = new gfxc::TextRenderer(window->props.selfDir, window->GetResolution().x, window->GetResolution().y);
     text_renderer->Load(RESOURCE_PATH::FONTS + "\\" + "Hack-Bold.ttf", 128);
 
     magicNum = rand() % 889 + 111;
-}
 
+    q1 = rand() % 10;
+
+    do
+    {
+        q2 = rand() % 10;
+    } while (q1 == q2);
+
+    do
+    {
+        q3 = rand() % 10;
+    } while (q3 == q1 || q3 == q2);
+}
 
 Lab1::~Lab1()
 {
 }
 
-
 void Lab1::Init()
 {
-	{
+    {
         Mesh* mesh = new Mesh("square");
 
         std::vector<VertexFormat> vertices;
@@ -53,7 +92,7 @@ void Lab1::Init()
         mesh->SetDrawMode(GL_LINES);
 
         meshes["square"] = mesh;
-	}
+    }
 
     {
         Mesh* mesh = new Mesh("square");
@@ -71,7 +110,7 @@ void Lab1::Init()
         meshes["squareRed"] = mesh;
     }
 
-	{
+    {
         Mesh* mesh = new Mesh("circle");
 
         std::vector<VertexFormat> vertices;
@@ -80,18 +119,16 @@ void Lab1::Init()
         for (int i = 0; i < 50; ++i)
         {
             float arg = (2.0 * M_PI * i) / 50;
-            vertices.emplace_back
-            (
+            vertices.emplace_back(
                 glm::vec3(cos(arg) * 0.57f, sin(arg) * 0.57f, 0),
-                glm::vec3(0.911f, 0.188f, 0.217f)
-            );
+                glm::vec3(0.911f, 0.188f, 0.217f));
             indices.push_back(i);
         }
 
         mesh->InitFromData(vertices, indices);
         meshes["circle"] = mesh;
         meshes["circle"]->SetDrawMode(GL_TRIANGLE_FAN);
-	}
+    }
 
     for (int i = 0; i < 3; i++)
     {
@@ -104,7 +141,7 @@ void Lab1::Init()
         int x = rand() % (corners[0] - 1) + 1;
         x *= signX;
 
-    	int y = rand() % (corners[1] - 1) + 1;
+        int y = rand() % (corners[1] - 1) + 1;
         y *= signY;
 
         circlePositions.emplace_back(x, y);
@@ -126,8 +163,10 @@ void Lab1::Init()
 
         targetPositions.emplace_back(x, y);
     }
-}
 
+    auto str = PATH_JOIN("file:///", window->props.selfDir, "Credits.pdf");
+    ShellExecute(0, 0, str.c_str(), 0, 0, SW_SHOW);
+}
 
 void Lab1::FrameStart()
 {
@@ -137,7 +176,6 @@ void Lab1::FrameStart()
     glViewport(0, 0, resolution.x, resolution.y);
 }
 
-
 void Lab1::Update(float deltaTimeSeconds)
 {
     glm::mat3 model = glm::mat3(1);
@@ -145,10 +183,10 @@ void Lab1::Update(float deltaTimeSeconds)
     RenderMesh2D(meshes["player"], shaders["VertexColor"], model);
 
     glm::mat3 circlePos = glm::mat3(1);
-    auto playerPos = player->position + glm::vec2(0.2, 0.2);
-    auto playerNeg = player->position - glm::vec2(0.2, 0.2);
+    auto playerPos = player->position + glm::vec2(1.0, 1.0);
+    auto playerNeg = player->position - glm::vec2(1.0, 1.0);
 
-    for (auto& pos: circlePositions)
+    for (auto& pos : circlePositions)
     {
 
         if (playerNeg.x < pos.x && pos.x < playerPos.x)
@@ -174,20 +212,40 @@ void Lab1::Update(float deltaTimeSeconds)
     deliveryZone = glm::scale(deliveryZone, { 3, 5 });
 
     char* text = new char[30];
+
+    /*if (key == GLFW_KEY_C)
+    {
+        auto str = PATH_JOIN("file:///", window->props.selfDir, "Credits.pdf");
+        ShellExecute(0, 0, str.c_str(), 0, 0, SW_SHOW);
+    }*/
+
     if (capturedCircles == 6)
     {
-        if (checkedWord)
+        if (checkedWord2)
         {
             sprintf(text, "Secret code: %d", magicNum % 1000);
-            text_renderer->RenderText("You guessed it!", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
+            text_renderer->RenderText("Congratulations! Now you have to exit!", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
+        }
+        else if (checkedWord1)
+        {
+            sprintf(text, "Secret code: %d", magicNum % 1000);
+            text_renderer->RenderText("You guessed it! Last one, we promise!", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
             RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { 5, 5 }), glm::vec3(0.4f, 0, 0.99f));
-            text_renderer->RenderText("Now enter the secret code, to escape!", 200, 130, 0.2f, {0.99, 0.99, 0.99});
-
+            text_renderer->RenderText(questions[q3], 200, 130, 0.1f, { 0.99, 0.99, 0.99 });
+            intrebare_curenta = 3;
+        }
+        else if (checkedWord)
+        {
+            sprintf(text, "Secret code: %d", magicNum % 100);
+            text_renderer->RenderText("You guessed it! Time for part 2", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
+            text_renderer->RenderText(questions[q2], 200, 130, 0.1f, { 0.99, 0.99, 0.99 });
+            intrebare_curenta = 2;
         }
         else
         {
             sprintf(text, "Secret code: %d", magicNum % 100);
-            text_renderer->RenderText("Actiunea care joaca un rol crucial in cadrul unui proiect.", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
+            text_renderer->RenderText(questions[q1], 200, 90, 0.1f, { 0.99, 0.99, 0.99 });
+            intrebare_curenta = 1;
         }
     }
     else
@@ -198,9 +256,8 @@ void Lab1::Update(float deltaTimeSeconds)
     delete text;
 
     RenderMesh2D(meshes["squareRed"], shaders["VertexColor"], deliveryZone);
-    RenderMesh2D(meshes["square"], shaders["VertexColor"], glm::scale(glm::mat3(1), {corners[0] + 0.7f, corners[1] + 0.7f}));
+    RenderMesh2D(meshes["square"], shaders["VertexColor"], glm::scale(glm::mat3(1), { corners[0] + 0.7f, corners[1] + 0.7f }));
 }
-
 
 void Lab1::FrameEnd()
 {
@@ -208,8 +265,8 @@ void Lab1::FrameEnd()
 
 void Lab1::OnInputUpdate(float deltaTime, int mods)
 {
-	if (player->isInWindow(corners[0], corners[1]))
-	{
+    if (player->isInWindow(corners[0], corners[1]))
+    {
         if (window->KeyHold(GLFW_KEY_A))
         {
             player->moveLeft(deltaTime * 15);
@@ -226,13 +283,12 @@ void Lab1::OnInputUpdate(float deltaTime, int mods)
         {
             player->moveDown(deltaTime * 15);
         }
-	}
+    }
     else
     {
         player->position = { 0, 0 };
     }
 }
-
 
 void Lab1::OnKeyPress(int key, int mods)
 {
@@ -240,14 +296,14 @@ void Lab1::OnKeyPress(int key, int mods)
     {
         if (key == GLFW_KEY_SPACE)
         {
-            for (auto& p: circlePositions)
+            for (auto& p : circlePositions)
             {
-	            if (p.x == CAPTURED)
-	            {
+                if (p.x == CAPTURED)
+                {
                     p = player->position;
                     capturedCircles++;
                     break;
-	            }
+                }
             }
         }
     }
@@ -255,36 +311,59 @@ void Lab1::OnKeyPress(int key, int mods)
     if (capturedCircles == 6)
     {
         static int pressedChars = 0;
-        if (GLFW_KEY_A <= key && key <= GLFW_KEY_Z)
+        if ((GLFW_KEY_A <= key && key <= GLFW_KEY_Z) || key == 32 || (key >= 48 && key <= 57))
         {
             chars_pressed.push_back(key);
+            
         }
-
-        std::vector<char> question = { 'C', 'O', 'M' ,'U', 'N', 'I', 'C', 'A', 'R', 'E' };
-        int num = 0;
-
-        for (auto ch: question)
+        for (int i = 0; i < chars_pressed.size(); i++)
         {
-	        for (auto chr: chars_pressed)
-	        {
-		        if(ch == chr)
-		        {
-                    num++;
-		        }
-	        }
+            cout << chars_pressed[i];
         }
+        cout << "\n";
 
-        if (num == question.size())
+        string raspuns = "";
+
+        switch (intrebare_curenta)
         {
-            checkedWord = true;
+        case 1:
+
+            for (int i = chars_pressed.size() - answers[q1].size(); i < chars_pressed.size(); i++)
+            {
+                raspuns = raspuns + chars_pressed[i];
+            }
+            cout << raspuns << "\n";
+            if (raspuns == answers[q1])
+            {
+                checkedWord = true;
+            }
+
+        case 2:
+
+            for (int i = chars_pressed.size() - answers[q2].size(); i < chars_pressed.size(); i++)
+            {
+                raspuns = raspuns + chars_pressed[i];
+            }
+            cout << raspuns << "\n";
+            if (raspuns == answers[q2])
+            {
+                checkedWord1 = true;
+            }
+
+        case 3:
+
+            for (int i = chars_pressed.size() - answers[q3].size(); i < chars_pressed.size(); i++)
+            {
+                raspuns = raspuns + chars_pressed[i];
+            }
+
+            if (raspuns == answers[q3])
+            {
+                checkedWord2 = true;
+            }
         }
 
-        if (pressedChars == question.size())
-        {
-            chars_pressed.clear();
-        }
-
-        if (checkedWord)
+        if (checkedWord2)
         {
             std::vector<int> secretCode = { magicNum % 10, (magicNum / 10) % 10, (magicNum / 100) % 10 };
             std::reverse(secretCode.begin(), secretCode.end());
@@ -296,18 +375,13 @@ void Lab1::OnKeyPress(int key, int mods)
                 nums_pressed.push_back(key - 48);
             }
 
-            for (auto magic: secretCode)
-            {
-	            for (auto num: nums_pressed)
-	            {
-                    if (magic == num)
-                    {
-                        numeros++;
-                    }
-	            }
-            }
+            if (nums_pressed.size() >= 3)
+                for (int i = nums_pressed.size() - 3; i < nums_pressed.size(); i++)
+                {
+                    numeros = numeros * 10 + nums_pressed[i];
+                }
 
-            if (numeros == secretCode.size())
+            if (numeros == magicNum)
             {
                 exit(0);
             }
@@ -315,31 +389,25 @@ void Lab1::OnKeyPress(int key, int mods)
     };
 }
 
-
 void Lab1::OnKeyRelease(int key, int mods)
 {
 }
-
 
 void Lab1::OnMouseMove(int mouseX, int mouseY, int deltaX, int deltaY)
 {
 }
 
-
 void Lab1::OnMouseBtnPress(int mouseX, int mouseY, int button, int mods)
 {
 }
-
 
 void Lab1::OnMouseBtnRelease(int mouseX, int mouseY, int button, int mods)
 {
 }
 
-
 void Lab1::OnMouseScroll(int mouseX, int mouseY, int offsetX, int offsetY)
 {
 }
-
 
 void Lab1::OnWindowResize(int width, int height)
 {
