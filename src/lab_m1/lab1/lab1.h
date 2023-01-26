@@ -45,6 +45,8 @@ namespace m1
 
         int intrebare_curenta, q1, q2, q3;
 
+        bool hint;
+
         bool checkedWord;
         bool checkedWord1;
         bool checkedWord2;

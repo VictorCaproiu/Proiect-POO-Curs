@@ -34,6 +34,18 @@ vector<string> answers = {
     "8",
     "RISK SOURCE" };
 
+vector<string> hints = {
+    "R____RE____S",
+    "S__E_T__N",
+    "P___ORM___E",
+    "_ T___RY",
+    "R____NSI__E AC____T_BLE C___UL__D INF___D",
+    ">70% , <90%",
+    "C_____L B____",
+    "2^3",
+    "pi's eleventh decimal",
+    "R___ S_____" };
+
 constexpr int CAPTURED = 50;
 
 Lab1::Lab1()
@@ -52,6 +64,7 @@ Lab1::Lab1()
     checkedWord = false;
     checkedWord1 = false;
     checkedWord2 = false;
+    hint = false;
     intrebare_curenta = 0;
 
     text_renderer = new gfxc::TextRenderer(window->props.selfDir, window->GetResolution().x, window->GetResolution().y);
@@ -164,6 +177,8 @@ void Lab1::Init()
         targetPositions.emplace_back(x, y);
     }
 
+    hint = false;
+
     auto str = PATH_JOIN("file:///", window->props.selfDir, "Credits.pdf");
     ShellExecute(0, 0, str.c_str(), 0, 0, SW_SHOW);
 }
@@ -182,9 +197,18 @@ void Lab1::Update(float deltaTimeSeconds)
     model = glm::translate(model, player->position);
     RenderMesh2D(meshes["player"], shaders["VertexColor"], model);
 
+    RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { -25, -15 }), glm::vec3(0, 0, 0));
     glm::mat3 circlePos = glm::mat3(1);
     auto playerPos = player->position + glm::vec2(1.0, 1.0);
     auto playerNeg = player->position - glm::vec2(1.0, 1.0);
+
+    if (playerNeg.x < -25 && -25 < playerPos.x && playerNeg.y < -15 && -15 < playerPos.y)
+    {
+        hint = true;
+    }
+    else {
+        hint = false;
+    }
 
     for (auto& pos : circlePositions)
     {
@@ -219,6 +243,34 @@ void Lab1::Update(float deltaTimeSeconds)
         ShellExecute(0, 0, str.c_str(), 0, 0, SW_SHOW);
     }*/
 
+    if (hint) {
+        switch (intrebare_curenta)
+        {
+        case 0:
+            text_renderer->RenderText("Press space to release in the red zone.", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+        break;
+        case 1:
+            text_renderer->RenderText(hints[q1], 50, 600, 0.2f, {0.99, 0.99, 0.99});
+        break;
+        case 2:
+            text_renderer->RenderText(hints[q2], 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+        break;
+        case 3:
+            text_renderer->RenderText(hints[q3], 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+        break;
+        
+        default:
+            text_renderer->RenderText("The key is in front of you!", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+            break;
+        }
+
+        
+        
+    }
+    else {
+        text_renderer->RenderText("Need a hint?", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+    }
+
     if (capturedCircles == 6)
     {
         if (checkedWord2)
@@ -226,25 +278,26 @@ void Lab1::Update(float deltaTimeSeconds)
             sprintf(text, "Secret code: %d", magicNum);
             RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { 5, 5 }), glm::vec3(0.4f, 0, 0.99f));
             text_renderer->RenderText("Congratulations! Now you have to exit!", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
+            intrebare_curenta = 4;
         }
         else if (checkedWord1)
         {
             sprintf(text, "Secret code: %d", magicNum % 10000);
             text_renderer->RenderText("You guessed it! Last one, we promise!", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
-            text_renderer->RenderText(questions[q3], 200, 130, 0.1f, { 0.99, 0.99, 0.99 });
+            text_renderer->RenderText(questions[q3], 200, 130, 0.13f, { 0.99, 0.99, 0.99 });
             intrebare_curenta = 3;
         }
         else if (checkedWord)
         {
             sprintf(text, "Secret code: %d", magicNum % 1000);
             text_renderer->RenderText("You guessed it! Time for part 2", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
-            text_renderer->RenderText(questions[q2], 200, 130, 0.1f, { 0.99, 0.99, 0.99 });
+            text_renderer->RenderText(questions[q2], 200, 130, 0.13f, { 0.99, 0.99, 0.99 });
             intrebare_curenta = 2;
         }
         else
         {
             sprintf(text, "Secret code: %d", magicNum % 100);
-            text_renderer->RenderText(questions[q1], 200, 90, 0.1f, { 0.99, 0.99, 0.99 });
+            text_renderer->RenderText(questions[q1], 200, 90, 0.13f, { 0.99, 0.99, 0.99 });
             intrebare_curenta = 1;
         }
     }
