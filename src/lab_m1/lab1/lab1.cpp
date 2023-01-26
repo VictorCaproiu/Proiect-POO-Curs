@@ -57,7 +57,7 @@ Lab1::Lab1()
     text_renderer = new gfxc::TextRenderer(window->props.selfDir, window->GetResolution().x, window->GetResolution().y);
     text_renderer->Load(RESOURCE_PATH::FONTS + "\\" + "Hack-Bold.ttf", 128);
 
-    magicNum = rand() % 889 + 111;
+    magicNum = rand() % 88889 + 11111;
 
     q1 = rand() % 10;
 
@@ -223,20 +223,20 @@ void Lab1::Update(float deltaTimeSeconds)
     {
         if (checkedWord2)
         {
-            sprintf(text, "Secret code: %d", magicNum % 1000);
+            sprintf(text, "Secret code: %d", magicNum);
+            RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { 5, 5 }), glm::vec3(0.4f, 0, 0.99f));
             text_renderer->RenderText("Congratulations! Now you have to exit!", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
         }
         else if (checkedWord1)
         {
-            sprintf(text, "Secret code: %d", magicNum % 1000);
+            sprintf(text, "Secret code: %d", magicNum % 10000);
             text_renderer->RenderText("You guessed it! Last one, we promise!", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
-            RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { 5, 5 }), glm::vec3(0.4f, 0, 0.99f));
             text_renderer->RenderText(questions[q3], 200, 130, 0.1f, { 0.99, 0.99, 0.99 });
             intrebare_curenta = 3;
         }
         else if (checkedWord)
         {
-            sprintf(text, "Secret code: %d", magicNum % 100);
+            sprintf(text, "Secret code: %d", magicNum % 1000);
             text_renderer->RenderText("You guessed it! Time for part 2", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
             text_renderer->RenderText(questions[q2], 200, 130, 0.1f, { 0.99, 0.99, 0.99 });
             intrebare_curenta = 2;
@@ -335,6 +335,7 @@ void Lab1::OnKeyPress(int key, int mods)
             cout << raspuns << "\n";
             if (raspuns == answers[q1])
             {
+                chars_pressed.clear();
                 checkedWord = true;
             }
 
@@ -347,6 +348,7 @@ void Lab1::OnKeyPress(int key, int mods)
             cout << raspuns << "\n";
             if (raspuns == answers[q2])
             {
+                chars_pressed.clear();
                 checkedWord1 = true;
             }
 
@@ -359,14 +361,15 @@ void Lab1::OnKeyPress(int key, int mods)
 
             if (raspuns == answers[q3])
             {
+                chars_pressed.clear();
                 checkedWord2 = true;
             }
         }
 
         if (checkedWord2)
         {
-            std::vector<int> secretCode = { magicNum % 10, (magicNum / 10) % 10, (magicNum / 100) % 10 };
-            std::reverse(secretCode.begin(), secretCode.end());
+            /*std::vector<int> secretCode = { magicNum % 10, (magicNum / 10) % 10, (magicNum / 100) % 10 };
+            std::reverse(secretCode.begin(), secretCode.end());*/
 
             int numeros = 0;
 
@@ -375,8 +378,8 @@ void Lab1::OnKeyPress(int key, int mods)
                 nums_pressed.push_back(key - 48);
             }
 
-            if (nums_pressed.size() >= 3)
-                for (int i = nums_pressed.size() - 3; i < nums_pressed.size(); i++)
+            if (nums_pressed.size() >= 5)
+                for (int i = nums_pressed.size() - 5; i < nums_pressed.size(); i++)
                 {
                     numeros = numeros * 10 + nums_pressed[i];
                 }
