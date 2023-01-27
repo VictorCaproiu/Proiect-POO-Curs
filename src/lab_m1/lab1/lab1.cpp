@@ -36,7 +36,7 @@ vector<string> answers = {
 
 vector<string> hints = {
     "RE_________",
-    "REQU--------",
+    "REQU_______",
     "REQUIR_____",
     "REQUIRMEN__",
     "REQUIREMENTS",
@@ -55,7 +55,6 @@ vector<string> hints = {
     "Z THE___",
     "Z THEO__",
     "Z THEORY",
-    "R____NSI__E AC____T_BLE C___UL__D INF___D",
     "RESPONSIBLE __________ ________ ________",
     "RESPONSIBLE ACCOUNTABLE _________ ________",
     "RESPONSIBLE ACCOUNTABLE CONSULTED _______",
@@ -127,6 +126,7 @@ Lab1::Lab1()
     } while (q3 == q1 || q3 == q2);
 
     cronometru = 0;
+    cronometru_afisare = 0;
 }
 
 Lab1::~Lab1()
@@ -240,7 +240,12 @@ void Lab1::Update(float deltaTimeSeconds)
     cronometru += deltaTimeSeconds;
     //cronometru = static_cast<int>(cronometru);
     cron_int = (int)cronometru;
+    cronometru_afisare = (int)cronometru;
     cout << cron_int << '\n';
+
+    cron_int = cron_int / 10;
+    if (cron_int >= 4)
+        cron_int = 4;
 
     glm::mat3 model = glm::mat3(1);
     model = glm::translate(model, player->position);
@@ -294,7 +299,8 @@ void Lab1::Update(float deltaTimeSeconds)
 
     
 
-    text_renderer->RenderText(to_string(cron_int) , 1200, 50, 0.2f, {0.99, 0.99, 0.99});
+    text_renderer->RenderText("Time spent: " + to_string(cronometru_afisare) + " sec", 1050, 50, 0.15f, {0.99, 0.99, 0.99});
+    text_renderer->RenderText("Use WASD to move", 1000, 650, 0.15f, {0.99, 0.99, 0.99});
 
 
     if (hint) {
@@ -304,13 +310,13 @@ void Lab1::Update(float deltaTimeSeconds)
             text_renderer->RenderText("Press space to release in the red zone.", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
         break;
         case 1:
-            text_renderer->RenderText(hints[q1 + (cron_int%1)], 50, 600, 0.2f, {0.99, 0.99, 0.99});
+            text_renderer->RenderText(hints[q1*5 + cron_int], 50, 600, 0.2f, {0.99, 0.99, 0.99});
         break;
         case 2:
-            text_renderer->RenderText(hints[q2], 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+            text_renderer->RenderText(hints[q2*5 + cron_int], 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
         break;
         case 3:
-            text_renderer->RenderText(hints[q3], 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+            text_renderer->RenderText(hints[q3*5 + cron_int], 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
         break;
         
         default:
@@ -358,6 +364,7 @@ void Lab1::Update(float deltaTimeSeconds)
     else
     {
         sprintf(text, "Secret code: %d", magicNum % 10);
+        cronometru = 0;
     }
     text_renderer->RenderText(text, 200, 40, 0.3f, { 0.99, 0.99, 0.99 });
     delete text;

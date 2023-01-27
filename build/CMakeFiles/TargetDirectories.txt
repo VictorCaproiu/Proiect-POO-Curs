@@ -1,3 +1,3 @@
-C:/Users/victo/Desktop/Proiect-POO-Curs/build/CMakeFiles/GFXFramework.dir
-C:/Users/victo/Desktop/Proiect-POO-Curs/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/victo/Desktop/Proiect-POO-Curs/build/CMakeFiles/ZERO_CHECK.dir
+D:/GitHub Repos/Proiect-POO-Curs/build/CMakeFiles/GFXFramework.dir
+D:/GitHub Repos/Proiect-POO-Curs/build/CMakeFiles/ALL_BUILD.dir
+D:/GitHub Repos/Proiect-POO-Curs/build/CMakeFiles/ZERO_CHECK.dir

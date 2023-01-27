@@ -54,7 +54,7 @@ namespace m1
 
         float cronometru;
         int cron_int;
-        char afisare_cron;
+        int cronometru_afisare;
 
         glm::vec2 deliveryPos1 = glm::vec2(-28, 15);
         glm::vec2 deliveryPos2 = glm::vec2(-23, 15);

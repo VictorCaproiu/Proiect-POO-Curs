@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\victo\Desktop\Proiect-POO-Curs\build\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>D:\GitHub Repos\Proiect-POO-Curs\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\Debug\GFXFramework.exe</FullPath>
+      <FullPath>D:\GitHub Repos\Proiect-POO-Curs\build\bin\Debug\GFXFramework.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

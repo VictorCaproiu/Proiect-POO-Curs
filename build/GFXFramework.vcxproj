@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -22,9 +22,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{22012A95-C8FF-374B-8177-1E9447FA97F0}</ProjectGuid>
+    <ProjectGuid>{8C54012E-667B-3856-9508-8D15F4843D3D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>GFXFramework</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -33,22 +33,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -59,38 +59,38 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\GitHub Repos\Proiect-POO-Curs\build\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GFXFramework.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GFXFramework</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/victo/Desktop/Proiect-POO-Curs</LocalDebuggerWorkingDirectory>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\Release\</OutDir>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/GitHub Repos/Proiect-POO-Curs</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\GitHub Repos\Proiect-POO-Curs\build\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GFXFramework.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GFXFramework</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/victo/Desktop/Proiect-POO-Curs</LocalDebuggerWorkingDirectory>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\MinSizeRel\</OutDir>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/GitHub Repos/Proiect-POO-Curs</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\GitHub Repos\Proiect-POO-Curs\build\bin\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GFXFramework.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GFXFramework</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/victo/Desktop/Proiect-POO-Curs</LocalDebuggerWorkingDirectory>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\RelWithDebInfo\</OutDir>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/GitHub Repos/Proiect-POO-Curs</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\GitHub Repos\Proiect-POO-Curs\build\bin\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GFXFramework.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GFXFramework</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
-    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/victo/Desktop/Proiect-POO-Curs</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/GitHub Repos/Proiect-POO-Curs</LocalDebuggerWorkingDirectory>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\victo\Desktop\Proiect-POO-Curs\deps\api;C:\Users\victo\Desktop\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub Repos\Proiect-POO-Curs\deps\api;D:\GitHub Repos\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -109,10 +109,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LIBGFXC_EXPORTS;GLM_FORCE_SILENT_WARNINGS;_CRT_SECURE_NO_WARNINGS;SOLVED;DEBUG;WITH_LAB_M1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\victo\Desktop\Proiect-POO-Curs\deps\api;C:\Users\victo\Desktop\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub Repos\Proiect-POO-Curs\deps\api;D:\GitHub Repos\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\victo\Desktop\Proiect-POO-Curs\deps\api;C:\Users\victo\Desktop\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub Repos\Proiect-POO-Curs\deps\api;D:\GitHub Repos\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -122,7 +122,7 @@
     <PostBuildEvent>
       <Message>			</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/GL/x86_64/glew32.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/GLFW/x86_64/glfw3.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/assimp/x86_64/assimp.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/spdlog/x86_64/spdlog.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/freetype/x86_64/freetype.dll C:/Users/victo/Desktop/Proiect-POO-Curs/build/bin/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/GL/x86_64/glew32.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/GLFW/x86_64/glfw3.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/assimp/x86_64/assimp.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/spdlog/x86_64/spdlog.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/freetype/x86_64/freetype.dll" "D:/GitHub Repos/Proiect-POO-Curs/build/bin/Debug"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -131,20 +131,9 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-rmdir /S /Q C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\Debug\src
+rmdir /S /Q "D:\GitHub Repos\Proiect-POO-Curs\build\bin\Debug\src"
 if %errorlevel% neq 0 goto :cmEnd
-mklink /J C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\Debug\src C:\Users\victo\Desktop\Proiect-POO-Curs\src
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
-rmdir /S /Q C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\Debug\assets
-if %errorlevel% neq 0 goto :cmEnd
-mklink /J C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\Debug\assets C:\Users\victo\Desktop\Proiect-POO-Curs\assets
+mklink /J "D:\GitHub Repos\Proiect-POO-Curs\build\bin\Debug\src" "D:\GitHub Repos\Proiect-POO-Curs\src"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -153,7 +142,18 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:\Users\victo\Desktop\Proiect-POO-Curs/deps/prebuilt/GFXComponents/x86_64/GFXComponents.dll C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\Debug
+rmdir /S /Q "D:\GitHub Repos\Proiect-POO-Curs\build\bin\Debug\assets"
+if %errorlevel% neq 0 goto :cmEnd
+mklink /J "D:\GitHub Repos\Proiect-POO-Curs\build\bin\Debug\assets" "D:\GitHub Repos\Proiect-POO-Curs\assets"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "D:\GitHub Repos\Proiect-POO-Curs/deps/prebuilt/GFXComponents/x86_64/GFXComponents.dll" "D:\GitHub Repos\Proiect-POO-Curs\build\bin\Debug"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -163,13 +163,13 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\GL\x86_64\glew32.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\GLFW\x86_64\glfw3dll.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\assimp\x86_64\assimp.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\spdlog\x86_64\spdlog.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\freetype\x86_64\freetype.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\GFXComponents\x86_64\GFXComponents.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\GL\x86_64\glew32.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\GLFW\x86_64\glfw3dll.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\assimp\x86_64\assimp.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\spdlog\x86_64\spdlog.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\freetype\x86_64\freetype.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\GFXComponents\x86_64\GFXComponents.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/victo/Desktop/Proiect-POO-Curs/build/Debug/GFXFramework.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/victo/Desktop/Proiect-POO-Curs/build/bin/Debug/GFXFramework.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/GitHub Repos/Proiect-POO-Curs/build/Debug/GFXFramework.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/GitHub Repos/Proiect-POO-Curs/build/bin/Debug/GFXFramework.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -178,7 +178,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\victo\Desktop\Proiect-POO-Curs\deps\api;C:\Users\victo\Desktop\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub Repos\Proiect-POO-Curs\deps\api;D:\GitHub Repos\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>4100;4458;4189</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -197,10 +197,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LIBGFXC_EXPORTS;GLM_FORCE_SILENT_WARNINGS;_CRT_SECURE_NO_WARNINGS;SOLVED;WITH_LAB_M1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\victo\Desktop\Proiect-POO-Curs\deps\api;C:\Users\victo\Desktop\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub Repos\Proiect-POO-Curs\deps\api;D:\GitHub Repos\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\victo\Desktop\Proiect-POO-Curs\deps\api;C:\Users\victo\Desktop\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub Repos\Proiect-POO-Curs\deps\api;D:\GitHub Repos\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -210,7 +210,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>			</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/GL/x86_64/glew32.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/GLFW/x86_64/glfw3.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/assimp/x86_64/assimp.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/spdlog/x86_64/spdlog.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/freetype/x86_64/freetype.dll C:/Users/victo/Desktop/Proiect-POO-Curs/build/bin/Release
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/GL/x86_64/glew32.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/GLFW/x86_64/glfw3.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/assimp/x86_64/assimp.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/spdlog/x86_64/spdlog.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/freetype/x86_64/freetype.dll" "D:/GitHub Repos/Proiect-POO-Curs/build/bin/Release"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -219,20 +219,9 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-rmdir /S /Q C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\Release\src
+rmdir /S /Q "D:\GitHub Repos\Proiect-POO-Curs\build\bin\Release\src"
 if %errorlevel% neq 0 goto :cmEnd
-mklink /J C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\Release\src C:\Users\victo\Desktop\Proiect-POO-Curs\src
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
-rmdir /S /Q C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\Release\assets
-if %errorlevel% neq 0 goto :cmEnd
-mklink /J C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\Release\assets C:\Users\victo\Desktop\Proiect-POO-Curs\assets
+mklink /J "D:\GitHub Repos\Proiect-POO-Curs\build\bin\Release\src" "D:\GitHub Repos\Proiect-POO-Curs\src"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -241,7 +230,18 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:\Users\victo\Desktop\Proiect-POO-Curs/deps/prebuilt/GFXComponents/x86_64/GFXComponents.dll C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\Release
+rmdir /S /Q "D:\GitHub Repos\Proiect-POO-Curs\build\bin\Release\assets"
+if %errorlevel% neq 0 goto :cmEnd
+mklink /J "D:\GitHub Repos\Proiect-POO-Curs\build\bin\Release\assets" "D:\GitHub Repos\Proiect-POO-Curs\assets"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "D:\GitHub Repos\Proiect-POO-Curs/deps/prebuilt/GFXComponents/x86_64/GFXComponents.dll" "D:\GitHub Repos\Proiect-POO-Curs\build\bin\Release"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -251,13 +251,13 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\GL\x86_64\glew32.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\GLFW\x86_64\glfw3dll.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\assimp\x86_64\assimp.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\spdlog\x86_64\spdlog.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\freetype\x86_64\freetype.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\GFXComponents\x86_64\GFXComponents.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\GL\x86_64\glew32.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\GLFW\x86_64\glfw3dll.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\assimp\x86_64\assimp.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\spdlog\x86_64\spdlog.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\freetype\x86_64\freetype.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\GFXComponents\x86_64\GFXComponents.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/victo/Desktop/Proiect-POO-Curs/build/Release/GFXFramework.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/victo/Desktop/Proiect-POO-Curs/build/bin/Release/GFXFramework.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/GitHub Repos/Proiect-POO-Curs/build/Release/GFXFramework.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/GitHub Repos/Proiect-POO-Curs/build/bin/Release/GFXFramework.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -266,7 +266,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\victo\Desktop\Proiect-POO-Curs\deps\api;C:\Users\victo\Desktop\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub Repos\Proiect-POO-Curs\deps\api;D:\GitHub Repos\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>4100;4458;4189</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -285,10 +285,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LIBGFXC_EXPORTS;GLM_FORCE_SILENT_WARNINGS;_CRT_SECURE_NO_WARNINGS;SOLVED;WITH_LAB_M1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\victo\Desktop\Proiect-POO-Curs\deps\api;C:\Users\victo\Desktop\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub Repos\Proiect-POO-Curs\deps\api;D:\GitHub Repos\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\victo\Desktop\Proiect-POO-Curs\deps\api;C:\Users\victo\Desktop\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub Repos\Proiect-POO-Curs\deps\api;D:\GitHub Repos\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -298,7 +298,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>			</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/GL/x86_64/glew32.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/GLFW/x86_64/glfw3.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/assimp/x86_64/assimp.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/spdlog/x86_64/spdlog.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/freetype/x86_64/freetype.dll C:/Users/victo/Desktop/Proiect-POO-Curs/build/bin/MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/GL/x86_64/glew32.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/GLFW/x86_64/glfw3.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/assimp/x86_64/assimp.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/spdlog/x86_64/spdlog.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/freetype/x86_64/freetype.dll" "D:/GitHub Repos/Proiect-POO-Curs/build/bin/MinSizeRel"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -307,20 +307,9 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-rmdir /S /Q C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\MinSizeRel\src
+rmdir /S /Q "D:\GitHub Repos\Proiect-POO-Curs\build\bin\MinSizeRel\src"
 if %errorlevel% neq 0 goto :cmEnd
-mklink /J C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\MinSizeRel\src C:\Users\victo\Desktop\Proiect-POO-Curs\src
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
-rmdir /S /Q C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\MinSizeRel\assets
-if %errorlevel% neq 0 goto :cmEnd
-mklink /J C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\MinSizeRel\assets C:\Users\victo\Desktop\Proiect-POO-Curs\assets
+mklink /J "D:\GitHub Repos\Proiect-POO-Curs\build\bin\MinSizeRel\src" "D:\GitHub Repos\Proiect-POO-Curs\src"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -329,7 +318,18 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:\Users\victo\Desktop\Proiect-POO-Curs/deps/prebuilt/GFXComponents/x86_64/GFXComponents.dll C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\MinSizeRel
+rmdir /S /Q "D:\GitHub Repos\Proiect-POO-Curs\build\bin\MinSizeRel\assets"
+if %errorlevel% neq 0 goto :cmEnd
+mklink /J "D:\GitHub Repos\Proiect-POO-Curs\build\bin\MinSizeRel\assets" "D:\GitHub Repos\Proiect-POO-Curs\assets"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "D:\GitHub Repos\Proiect-POO-Curs/deps/prebuilt/GFXComponents/x86_64/GFXComponents.dll" "D:\GitHub Repos\Proiect-POO-Curs\build\bin\MinSizeRel"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -339,13 +339,13 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\GL\x86_64\glew32.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\GLFW\x86_64\glfw3dll.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\assimp\x86_64\assimp.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\spdlog\x86_64\spdlog.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\freetype\x86_64\freetype.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\GFXComponents\x86_64\GFXComponents.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\GL\x86_64\glew32.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\GLFW\x86_64\glfw3dll.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\assimp\x86_64\assimp.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\spdlog\x86_64\spdlog.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\freetype\x86_64\freetype.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\GFXComponents\x86_64\GFXComponents.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/victo/Desktop/Proiect-POO-Curs/build/MinSizeRel/GFXFramework.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/victo/Desktop/Proiect-POO-Curs/build/bin/MinSizeRel/GFXFramework.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/GitHub Repos/Proiect-POO-Curs/build/MinSizeRel/GFXFramework.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/GitHub Repos/Proiect-POO-Curs/build/bin/MinSizeRel/GFXFramework.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -354,7 +354,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\victo\Desktop\Proiect-POO-Curs\deps\api;C:\Users\victo\Desktop\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub Repos\Proiect-POO-Curs\deps\api;D:\GitHub Repos\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4100;4458;4189</DisableSpecificWarnings>
@@ -372,10 +372,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LIBGFXC_EXPORTS;GLM_FORCE_SILENT_WARNINGS;_CRT_SECURE_NO_WARNINGS;SOLVED;WITH_LAB_M1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\victo\Desktop\Proiect-POO-Curs\deps\api;C:\Users\victo\Desktop\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub Repos\Proiect-POO-Curs\deps\api;D:\GitHub Repos\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\victo\Desktop\Proiect-POO-Curs\deps\api;C:\Users\victo\Desktop\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\GitHub Repos\Proiect-POO-Curs\deps\api;D:\GitHub Repos\Proiect-POO-Curs\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -385,7 +385,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>			</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/GL/x86_64/glew32.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/GLFW/x86_64/glfw3.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/assimp/x86_64/assimp.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/spdlog/x86_64/spdlog.dll C:/Users/victo/Desktop/Proiect-POO-Curs/deps/prebuilt/freetype/x86_64/freetype.dll C:/Users/victo/Desktop/Proiect-POO-Curs/build/bin/RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/GL/x86_64/glew32.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/GLFW/x86_64/glfw3.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/assimp/x86_64/assimp.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/spdlog/x86_64/spdlog.dll" "D:/GitHub Repos/Proiect-POO-Curs/deps/prebuilt/freetype/x86_64/freetype.dll" "D:/GitHub Repos/Proiect-POO-Curs/build/bin/RelWithDebInfo"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -394,20 +394,9 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-rmdir /S /Q C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\RelWithDebInfo\src
+rmdir /S /Q "D:\GitHub Repos\Proiect-POO-Curs\build\bin\RelWithDebInfo\src"
 if %errorlevel% neq 0 goto :cmEnd
-mklink /J C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\RelWithDebInfo\src C:\Users\victo\Desktop\Proiect-POO-Curs\src
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd
-setlocal
-rmdir /S /Q C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\RelWithDebInfo\assets
-if %errorlevel% neq 0 goto :cmEnd
-mklink /J C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\RelWithDebInfo\assets C:\Users\victo\Desktop\Proiect-POO-Curs\assets
+mklink /J "D:\GitHub Repos\Proiect-POO-Curs\build\bin\RelWithDebInfo\src" "D:\GitHub Repos\Proiect-POO-Curs\src"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -416,7 +405,18 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:\Users\victo\Desktop\Proiect-POO-Curs/deps/prebuilt/GFXComponents/x86_64/GFXComponents.dll C:\Users\victo\Desktop\Proiect-POO-Curs\build\bin\RelWithDebInfo
+rmdir /S /Q "D:\GitHub Repos\Proiect-POO-Curs\build\bin\RelWithDebInfo\assets"
+if %errorlevel% neq 0 goto :cmEnd
+mklink /J "D:\GitHub Repos\Proiect-POO-Curs\build\bin\RelWithDebInfo\assets" "D:\GitHub Repos\Proiect-POO-Curs\assets"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "D:\GitHub Repos\Proiect-POO-Curs/deps/prebuilt/GFXComponents/x86_64/GFXComponents.dll" "D:\GitHub Repos\Proiect-POO-Curs\build\bin\RelWithDebInfo"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -426,13 +426,13 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\GL\x86_64\glew32.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\GLFW\x86_64\glfw3dll.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\assimp\x86_64\assimp.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\spdlog\x86_64\spdlog.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\freetype\x86_64\freetype.lib;C:\Users\victo\Desktop\Proiect-POO-Curs\deps\prebuilt\GFXComponents\x86_64\GFXComponents.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\GL\x86_64\glew32.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\GLFW\x86_64\glfw3dll.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\assimp\x86_64\assimp.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\spdlog\x86_64\spdlog.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\freetype\x86_64\freetype.lib;D:\GitHub Repos\Proiect-POO-Curs\deps\prebuilt\GFXComponents\x86_64\GFXComponents.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/victo/Desktop/Proiect-POO-Curs/build/RelWithDebInfo/GFXFramework.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/victo/Desktop/Proiect-POO-Curs/build/bin/RelWithDebInfo/GFXFramework.pdb</ProgramDataBaseFile>
+      <ImportLibrary>D:/GitHub Repos/Proiect-POO-Curs/build/RelWithDebInfo/GFXFramework.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/GitHub Repos/Proiect-POO-Curs/build/bin/RelWithDebInfo/GFXFramework.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -440,11 +440,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\victo\Desktop\Proiect-POO-Curs\CMakeLists.txt">
+    <CustomBuild Include="D:\GitHub Repos\Proiect-POO-Curs\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/victo/Desktop/Proiect-POO-Curs/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/GitHub Repos/Proiect-POO-Curs/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/victo/Desktop/Proiect-POO-Curs -BC:/Users/victo/Desktop/Proiect-POO-Curs/build --check-stamp-file C:/Users/victo/Desktop/Proiect-POO-Curs/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/GitHub Repos/Proiect-POO-Curs" "-BD:/GitHub Repos/Proiect-POO-Curs/build" --check-stamp-file "D:/GitHub Repos/Proiect-POO-Curs/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -452,12 +452,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeCCompiler.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeSystem.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\infra\utils.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeCCompiler.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeSystem.cmake;D:\GitHub Repos\Proiect-POO-Curs\infra\utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/victo/Desktop/Proiect-POO-Curs/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/GitHub Repos/Proiect-POO-Curs/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/victo/Desktop/Proiect-POO-Curs -BC:/Users/victo/Desktop/Proiect-POO-Curs/build --check-stamp-file C:/Users/victo/Desktop/Proiect-POO-Curs/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/GitHub Repos/Proiect-POO-Curs" "-BD:/GitHub Repos/Proiect-POO-Curs/build" --check-stamp-file "D:/GitHub Repos/Proiect-POO-Curs/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -465,12 +465,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeCCompiler.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeSystem.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\infra\utils.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeCCompiler.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeSystem.cmake;D:\GitHub Repos\Proiect-POO-Curs\infra\utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/victo/Desktop/Proiect-POO-Curs/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/GitHub Repos/Proiect-POO-Curs/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/victo/Desktop/Proiect-POO-Curs -BC:/Users/victo/Desktop/Proiect-POO-Curs/build --check-stamp-file C:/Users/victo/Desktop/Proiect-POO-Curs/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/GitHub Repos/Proiect-POO-Curs" "-BD:/GitHub Repos/Proiect-POO-Curs/build" --check-stamp-file "D:/GitHub Repos/Proiect-POO-Curs/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -478,12 +478,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeCCompiler.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeSystem.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\infra\utils.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeCCompiler.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeSystem.cmake;D:\GitHub Repos\Proiect-POO-Curs\infra\utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/victo/Desktop/Proiect-POO-Curs/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/GitHub Repos/Proiect-POO-Curs/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/victo/Desktop/Proiect-POO-Curs -BC:/Users/victo/Desktop/Proiect-POO-Curs/build --check-stamp-file C:/Users/victo/Desktop/Proiect-POO-Curs/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/GitHub Repos/Proiect-POO-Curs" "-BD:/GitHub Repos/Proiect-POO-Curs/build" --check-stamp-file "D:/GitHub Repos/Proiect-POO-Curs/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -491,100 +491,100 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeCCompiler.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeCXXCompiler.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeRCCompiler.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\3.25.1\CMakeSystem.cmake;C:\Users\victo\Desktop\Proiect-POO-Curs\infra\utils.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\victo\Desktop\Proiect-POO-Curs\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.25\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeCCompiler.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\3.25.2\CMakeSystem.cmake;D:\GitHub Repos\Proiect-POO-Curs\infra\utils.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\GitHub Repos\Proiect-POO-Curs\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\camera_input.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\scene_input.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\simple_scene.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\text_renderer.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\engine.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\frame_buffer.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\gpu_buffers.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\mesh.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\shader.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\texture2D.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\managers\texture_manager.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\window\input_controller.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\window\window_callbacks.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\window\window_object.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\world.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\obstacle.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\player.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab2\lab2.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\lab3.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\lab3_vis2D.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\object2D.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab4\lab4.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab5\lab5.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab6\lab6.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab7\lab7.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab8\lab8.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab9\lab9.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\main.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\gl_utils.cpp" />
-    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\text_utils.cpp" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\camera.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\camera_input.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\exports.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\scene_input.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\simple_scene.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\text_renderer.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\transform.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\engine.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\frame_buffer.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\gpu_buffers.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\mesh.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\particle_effect.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\shader.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\ssbo.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\texture2D.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\vertex_format.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\managers\resource_path.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\managers\texture_manager.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\window\input_controller.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\window\window_callbacks.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\window\window_object.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\world.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\lab1.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\obstacle.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\player.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab2\lab2.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\lab3.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\lab3_vis2D.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\object2D.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\transform2D.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab4\lab4.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab4\transform3D.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab5\lab5.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab5\lab_camera.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab6\lab6.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab6\shaders\FragmentShader.glsl" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab6\shaders\VertexShader.glsl" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab7\lab7.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab7\shaders\FragmentShader.glsl" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab7\shaders\VertexShader.glsl" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab8\lab8.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab8\shaders\FragmentShader.glsl" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab8\shaders\VertexShader.glsl" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab9\lab9.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab9\shaders\FragmentShader.glsl" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab9\shaders\VertexShader.glsl" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab_list.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\gl_utils.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\glm_utils.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\math_utils.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\memory_utils.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\text_utils.h" />
-    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\window_utils.h" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\components\camera_input.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\components\scene_input.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\components\simple_scene.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\components\text_renderer.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\engine.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\gpu\frame_buffer.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\gpu\gpu_buffers.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\gpu\mesh.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\gpu\shader.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\gpu\texture2D.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\managers\texture_manager.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\window\input_controller.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\window\window_callbacks.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\window\window_object.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\world.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\obstacle.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\player.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab2\lab2.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab3\lab3.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab3\lab3_vis2D.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab3\object2D.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab4\lab4.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab5\lab5.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab6\lab6.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab7\lab7.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab8\lab8.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab9\lab9.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\main.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\utils\gl_utils.cpp" />
+    <ClCompile Include="D:\GitHub Repos\Proiect-POO-Curs\src\utils\text_utils.cpp" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\components\camera.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\components\camera_input.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\components\exports.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\components\scene_input.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\components\simple_scene.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\components\text_renderer.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\components\transform.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\engine.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\gpu\frame_buffer.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\gpu\gpu_buffers.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\gpu\mesh.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\gpu\particle_effect.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\gpu\shader.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\gpu\ssbo.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\gpu\texture2D.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\gpu\vertex_format.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\managers\resource_path.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\managers\texture_manager.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\window\input_controller.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\window\window_callbacks.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\window\window_object.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\core\world.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\obstacle.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\player.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab2\lab2.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab3\lab3.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab3\lab3_vis2D.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab3\object2D.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab3\transform2D.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab4\lab4.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab4\transform3D.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab5\lab5.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab5\lab_camera.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab6\lab6.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab6\shaders\FragmentShader.glsl" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab6\shaders\VertexShader.glsl" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab7\lab7.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab7\shaders\FragmentShader.glsl" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab7\shaders\VertexShader.glsl" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab8\lab8.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab8\shaders\FragmentShader.glsl" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab8\shaders\VertexShader.glsl" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab9\lab9.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab9\shaders\FragmentShader.glsl" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab9\shaders\VertexShader.glsl" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab_list.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\utils\gl_utils.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\utils\glm_utils.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\utils\math_utils.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\utils\memory_utils.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\utils\text_utils.h" />
+    <ClInclude Include="D:\GitHub Repos\Proiect-POO-Curs\src\utils\window_utils.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\victo\Desktop\Proiect-POO-Curs\build\ZERO_CHECK.vcxproj">
-      <Project>{D6B0DED6-6103-3FCE-9582-66F3E73FB6CA}</Project>
+    <ProjectReference Include="D:\GitHub Repos\Proiect-POO-Curs\build\ZERO_CHECK.vcxproj">
+      <Project>{6077F8DC-EE5D-39F3-89D5-47C6A401DB5C}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

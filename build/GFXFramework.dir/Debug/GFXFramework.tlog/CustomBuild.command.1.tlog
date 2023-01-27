@@ -1,6 +1,6 @@
-^C:\USERS\VICTO\DESKTOP\PROIECT-POO-CURS\CMAKELISTS.TXT
+^D:\GITHUB REPOS\PROIECT-POO-CURS\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/victo/Desktop/Proiect-POO-Curs -BC:/Users/victo/Desktop/Proiect-POO-Curs/build --check-stamp-file C:/Users/victo/Desktop/Proiect-POO-Curs/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/GitHub Repos/Proiect-POO-Curs" "-BD:/GitHub Repos/Proiect-POO-Curs/build" --check-stamp-file "D:/GitHub Repos/Proiect-POO-Curs/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
