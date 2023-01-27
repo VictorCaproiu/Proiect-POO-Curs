@@ -5,6 +5,7 @@
 #include "components/text_renderer.h"
 #include <string>
 #include <vector>
+#include <time.h>
 
 namespace m1
 {
@@ -50,6 +51,10 @@ namespace m1
         bool checkedWord;
         bool checkedWord1;
         bool checkedWord2;
+
+        float cronometru;
+        int cron_int;
+        char afisare_cron;
 
         glm::vec2 deliveryPos1 = glm::vec2(-28, 15);
         glm::vec2 deliveryPos2 = glm::vec2(-23, 15);

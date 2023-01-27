@@ -1,327 +1,327 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\components\camera_input.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\camera_input.cpp">
       <Filter>src\components</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\components\scene_input.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\scene_input.cpp">
       <Filter>src\components</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\components\simple_scene.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\simple_scene.cpp">
       <Filter>src\components</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\components\text_renderer.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\text_renderer.cpp">
       <Filter>src\components</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\engine.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\engine.cpp">
       <Filter>src\core</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\gpu\frame_buffer.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\frame_buffer.cpp">
       <Filter>src\core\gpu</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\gpu\gpu_buffers.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\gpu_buffers.cpp">
       <Filter>src\core\gpu</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\gpu\mesh.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\mesh.cpp">
       <Filter>src\core\gpu</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\gpu\shader.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\shader.cpp">
       <Filter>src\core\gpu</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\gpu\texture2D.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\texture2D.cpp">
       <Filter>src\core\gpu</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\managers\texture_manager.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\managers\texture_manager.cpp">
       <Filter>src\core\managers</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\window\input_controller.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\window\input_controller.cpp">
       <Filter>src\core\window</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\window\window_callbacks.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\window\window_callbacks.cpp">
       <Filter>src\core\window</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\window\window_object.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\window\window_object.cpp">
       <Filter>src\core\window</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\world.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\world.cpp">
       <Filter>src\core</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp">
       <Filter>src\lab_m1\lab1</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\obstacle.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\obstacle.cpp">
       <Filter>src\lab_m1\lab1</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\player.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\player.cpp">
       <Filter>src\lab_m1\lab1</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab2\lab2.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab2\lab2.cpp">
       <Filter>src\lab_m1\lab2</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\lab3.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\lab3.cpp">
       <Filter>src\lab_m1\lab3</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\lab3_vis2D.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\lab3_vis2D.cpp">
       <Filter>src\lab_m1\lab3</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\object2D.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\object2D.cpp">
       <Filter>src\lab_m1\lab3</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab4\lab4.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab4\lab4.cpp">
       <Filter>src\lab_m1\lab4</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab5\lab5.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab5\lab5.cpp">
       <Filter>src\lab_m1\lab5</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab6\lab6.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab6\lab6.cpp">
       <Filter>src\lab_m1\lab6</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab7\lab7.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab7\lab7.cpp">
       <Filter>src\lab_m1\lab7</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab8\lab8.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab8\lab8.cpp">
       <Filter>src\lab_m1\lab8</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab9\lab9.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab9\lab9.cpp">
       <Filter>src\lab_m1\lab9</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\main.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\utils\gl_utils.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\gl_utils.cpp">
       <Filter>src\utils</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\utils\text_utils.cpp">
+    <ClCompile Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\text_utils.cpp">
       <Filter>src\utils</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\components\camera.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\camera.h">
       <Filter>src\components</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\components\camera_input.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\camera_input.h">
       <Filter>src\components</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\components\exports.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\exports.h">
       <Filter>src\components</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\components\scene_input.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\scene_input.h">
       <Filter>src\components</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\components\simple_scene.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\simple_scene.h">
       <Filter>src\components</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\components\text_renderer.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\text_renderer.h">
       <Filter>src\components</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\components\transform.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\components\transform.h">
       <Filter>src\components</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\engine.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\engine.h">
       <Filter>src\core</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\gpu\frame_buffer.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\frame_buffer.h">
       <Filter>src\core\gpu</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\gpu\gpu_buffers.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\gpu_buffers.h">
       <Filter>src\core\gpu</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\gpu\mesh.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\mesh.h">
       <Filter>src\core\gpu</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\gpu\particle_effect.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\particle_effect.h">
       <Filter>src\core\gpu</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\gpu\shader.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\shader.h">
       <Filter>src\core\gpu</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\gpu\ssbo.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\ssbo.h">
       <Filter>src\core\gpu</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\gpu\texture2D.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\texture2D.h">
       <Filter>src\core\gpu</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\gpu\vertex_format.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\gpu\vertex_format.h">
       <Filter>src\core\gpu</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\managers\resource_path.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\managers\resource_path.h">
       <Filter>src\core\managers</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\managers\texture_manager.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\managers\texture_manager.h">
       <Filter>src\core\managers</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\window\input_controller.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\window\input_controller.h">
       <Filter>src\core\window</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\window\window_callbacks.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\window\window_callbacks.h">
       <Filter>src\core\window</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\window\window_object.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\window\window_object.h">
       <Filter>src\core\window</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\core\world.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\core\world.h">
       <Filter>src\core</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\lab1.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\lab1.h">
       <Filter>src\lab_m1\lab1</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\obstacle.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\obstacle.h">
       <Filter>src\lab_m1\lab1</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\player.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\player.h">
       <Filter>src\lab_m1\lab1</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab2\lab2.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab2\lab2.h">
       <Filter>src\lab_m1\lab2</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\lab3.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\lab3.h">
       <Filter>src\lab_m1\lab3</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\lab3_vis2D.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\lab3_vis2D.h">
       <Filter>src\lab_m1\lab3</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\object2D.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\object2D.h">
       <Filter>src\lab_m1\lab3</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\transform2D.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab3\transform2D.h">
       <Filter>src\lab_m1\lab3</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab4\lab4.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab4\lab4.h">
       <Filter>src\lab_m1\lab4</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab4\transform3D.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab4\transform3D.h">
       <Filter>src\lab_m1\lab4</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab5\lab5.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab5\lab5.h">
       <Filter>src\lab_m1\lab5</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab5\lab_camera.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab5\lab_camera.h">
       <Filter>src\lab_m1\lab5</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab6\lab6.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab6\lab6.h">
       <Filter>src\lab_m1\lab6</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab6\shaders\FragmentShader.glsl">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab6\shaders\FragmentShader.glsl">
       <Filter>src\lab_m1\lab6\shaders</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab6\shaders\VertexShader.glsl">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab6\shaders\VertexShader.glsl">
       <Filter>src\lab_m1\lab6\shaders</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab7\lab7.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab7\lab7.h">
       <Filter>src\lab_m1\lab7</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab7\shaders\FragmentShader.glsl">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab7\shaders\FragmentShader.glsl">
       <Filter>src\lab_m1\lab7\shaders</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab7\shaders\VertexShader.glsl">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab7\shaders\VertexShader.glsl">
       <Filter>src\lab_m1\lab7\shaders</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab8\lab8.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab8\lab8.h">
       <Filter>src\lab_m1\lab8</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab8\shaders\FragmentShader.glsl">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab8\shaders\FragmentShader.glsl">
       <Filter>src\lab_m1\lab8\shaders</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab8\shaders\VertexShader.glsl">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab8\shaders\VertexShader.glsl">
       <Filter>src\lab_m1\lab8\shaders</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab9\lab9.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab9\lab9.h">
       <Filter>src\lab_m1\lab9</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab9\shaders\FragmentShader.glsl">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab9\shaders\FragmentShader.glsl">
       <Filter>src\lab_m1\lab9\shaders</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab9\shaders\VertexShader.glsl">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab9\shaders\VertexShader.glsl">
       <Filter>src\lab_m1\lab9\shaders</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab_list.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\lab_m1\lab_list.h">
       <Filter>src\lab_m1</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\utils\gl_utils.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\gl_utils.h">
       <Filter>src\utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\utils\glm_utils.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\glm_utils.h">
       <Filter>src\utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\utils\math_utils.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\math_utils.h">
       <Filter>src\utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\utils\memory_utils.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\memory_utils.h">
       <Filter>src\utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\utils\text_utils.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\text_utils.h">
       <Filter>src\utils</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\user\Desktop\Proiect-POO-Curs\src\utils\window_utils.h">
+    <ClInclude Include="C:\Users\victo\Desktop\Proiect-POO-Curs\src\utils\window_utils.h">
       <Filter>src\utils</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\user\Desktop\Proiect-POO-Curs\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\victo\Desktop\Proiect-POO-Curs\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
-      <UniqueIdentifier>{F14036D7-B3A3-3AED-9FA7-73AFC376DEA7}</UniqueIdentifier>
+      <UniqueIdentifier>{9C9E8C75-D481-3CE4-8A6D-9F70F16484E9}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\components">
-      <UniqueIdentifier>{9BCBD8BC-81FC-3E8E-A1D3-72881E77B415}</UniqueIdentifier>
+      <UniqueIdentifier>{95EA70F0-87BB-31FE-80E7-5D2AB577744A}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\core">
-      <UniqueIdentifier>{E6C1DCC8-D915-375F-87AB-F9DDBF3F8834}</UniqueIdentifier>
+      <UniqueIdentifier>{81B4483B-CC58-363B-BCDF-DFCA63B0FCEF}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\core\gpu">
-      <UniqueIdentifier>{D1359073-62A7-3F49-BA48-4CDF7620FC65}</UniqueIdentifier>
+      <UniqueIdentifier>{F3B6359F-1C8E-3C5E-9857-B1084A16104E}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\core\managers">
-      <UniqueIdentifier>{4ED6A7BB-9C47-3A7B-BFBD-7A893095C4B1}</UniqueIdentifier>
+      <UniqueIdentifier>{286F9DBE-45AA-33C0-9F48-F476D5630516}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\core\window">
-      <UniqueIdentifier>{2757F269-30F1-3916-931F-68E092D23585}</UniqueIdentifier>
+      <UniqueIdentifier>{76E73A19-06DA-31CE-AB07-71AFD8F281EA}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1">
-      <UniqueIdentifier>{5F4930E0-C77A-3542-9F07-8EED2E99C2F2}</UniqueIdentifier>
+      <UniqueIdentifier>{6FF61BD7-79A8-331A-A2E7-BBA3585F5736}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1\lab1">
-      <UniqueIdentifier>{5D4379B8-193A-38B4-9CDC-20DFEDB40763}</UniqueIdentifier>
+      <UniqueIdentifier>{6B6A8865-BB11-352D-99FA-13C4162DB27E}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1\lab2">
-      <UniqueIdentifier>{A4800A85-6E41-3F11-9233-E9193C4371EB}</UniqueIdentifier>
+      <UniqueIdentifier>{E7BA9062-9AAC-35B2-AF41-EF5FA6FCAD9B}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1\lab3">
-      <UniqueIdentifier>{C61C87C0-B9B8-343A-8B35-6C63295292C4}</UniqueIdentifier>
+      <UniqueIdentifier>{DC99DC3A-1C69-393F-A48D-8E9681A20838}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1\lab4">
-      <UniqueIdentifier>{28CF6A7E-44BA-37AD-8F2D-17F6B68368BA}</UniqueIdentifier>
+      <UniqueIdentifier>{F7C42CB6-B6B2-37E2-B3C7-64D605638ED2}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1\lab5">
-      <UniqueIdentifier>{77F00E0A-1051-3BFC-9900-CA932721A6A5}</UniqueIdentifier>
+      <UniqueIdentifier>{756989B1-0A5F-35E7-969A-F102FFF6D9EB}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1\lab6">
-      <UniqueIdentifier>{D2E7DA4B-B15E-304A-A595-529BA0981ED8}</UniqueIdentifier>
+      <UniqueIdentifier>{DBDDFABD-115D-3CCC-872F-55CAF6325FF9}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1\lab6\shaders">
-      <UniqueIdentifier>{016E14F6-CA11-3E28-836F-3D7A78C598A6}</UniqueIdentifier>
+      <UniqueIdentifier>{85372A0B-04D2-32D8-AAD9-46FE59298131}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1\lab7">
-      <UniqueIdentifier>{613F1FEE-0A40-3F85-8789-B21D1080FC10}</UniqueIdentifier>
+      <UniqueIdentifier>{B9A71B7A-2249-3C6C-A5D8-EE70EF3D4334}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1\lab7\shaders">
-      <UniqueIdentifier>{0561902C-827C-3473-B293-3AE8C50BAAEF}</UniqueIdentifier>
+      <UniqueIdentifier>{E7B3DD16-DDA8-382A-A840-355D62A854BB}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1\lab8">
-      <UniqueIdentifier>{8BE43025-4AF3-3672-A643-9FC014644E21}</UniqueIdentifier>
+      <UniqueIdentifier>{AE38576D-3E93-3CAB-98CD-7AC30AE637C5}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1\lab8\shaders">
-      <UniqueIdentifier>{D33BE363-B1AC-3ECE-8A09-7586449C2572}</UniqueIdentifier>
+      <UniqueIdentifier>{0339E09D-F1FF-3111-BA7B-E23B083F7D86}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1\lab9">
-      <UniqueIdentifier>{04B23B34-4246-38E0-AD34-FAA33F473F8C}</UniqueIdentifier>
+      <UniqueIdentifier>{4792A702-F39F-3889-9520-27BE54B4BB3D}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\lab_m1\lab9\shaders">
-      <UniqueIdentifier>{4A3AD5FF-75B8-34A0-BBD2-1066D859AE75}</UniqueIdentifier>
+      <UniqueIdentifier>{DCEB0D34-ADC2-3234-9C2B-A88C15CBECC7}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\utils">
-      <UniqueIdentifier>{B5D7AC59-9CE2-3F64-8664-9DE0F329DAE2}</UniqueIdentifier>
+      <UniqueIdentifier>{269112A8-7661-3D9E-88DD-953E63394D47}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

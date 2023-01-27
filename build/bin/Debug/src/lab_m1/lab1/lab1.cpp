@@ -35,16 +35,58 @@ vector<string> answers = {
     "RISK SOURCE" };
 
 vector<string> hints = {
-    "R____RE____S",
-    "S__E_T__N",
-    "P___ORM___E",
-    "_ T___RY",
+    "RE_________",
+    "REQU--------",
+    "REQUIR_____",
+    "REQUIRMEN__",
+    "REQUIREMENTS",
+    "SE_______",
+    "SELE_____",
+    "SELECT___",
+    "SELECTI__",
+    "SELECTION",
+    "PE_________",
+    "PERF_______",
+    "PERFOR_____",
+    "PERFORMAN__",
+    "PERFORMANCE",
+    "Z ______",
+    "Z T_____",
+    "Z THE___",
+    "Z THEO__",
+    "Z THEORY",
     "R____NSI__E AC____T_BLE C___UL__D INF___D",
-    ">70% , <90%",
-    "C_____L B____",
+    "RESPONSIBLE __________ ________ ________",
+    "RESPONSIBLE ACCOUNTABLE _________ ________",
+    "RESPONSIBLE ACCOUNTABLE CONSULTED _______",
+    "RESPONSIBLE ACCOUNTABLE CONSULTED INF_____",
+    "RESPONSIBLE ACCOUNTABLE CONSULTED INFORMED",
+    ">70%/",
+    ">70% && <90%",
+    "80%",
+    "80%",
+    "80%",
+    "CO______ _____",
+    "CONT___ _____",
+    "CONTROL _____",
+    "CONTROL BOA",
+    "CONTROL BOARD",
     "2^3",
+    "8",
+    "8",
+    "8",
+    "8",
     "pi's eleventh decimal",
-    "R___ S_____" };
+    "8",
+    "8",
+    "8",
+    "8",
+    "RI__ ______",
+    "RISK ______",
+    "RISK SO____",
+    "RISK SOUR__",
+    "RISK SOURCE"
+};
 
 constexpr int CAPTURED = 50;
 
@@ -83,6 +125,8 @@ Lab1::Lab1()
     {
         q3 = rand() % 10;
     } while (q3 == q1 || q3 == q2);
+
+    cronometru = 0;
 }
 
 Lab1::~Lab1()
@@ -193,6 +237,11 @@ void Lab1::FrameStart()
 
 void Lab1::Update(float deltaTimeSeconds)
 {
+    cronometru += deltaTimeSeconds;
+    //cronometru = static_cast<int>(cronometru);
+    cron_int = (int)cronometru;
+    cout << cron_int << '\n';
+
     glm::mat3 model = glm::mat3(1);
     model = glm::translate(model, player->position);
     RenderMesh2D(meshes["player"], shaders["VertexColor"], model);
@@ -243,6 +292,11 @@ void Lab1::Update(float deltaTimeSeconds)
         ShellExecute(0, 0, str.c_str(), 0, 0, SW_SHOW);
     }*/
 
+    
+
+    text_renderer->RenderText(to_string(cron_int) , 1200, 50, 0.2f, {0.99, 0.99, 0.99});
+
+
     if (hint) {
         switch (intrebare_curenta)
         {
@@ -250,7 +304,7 @@ void Lab1::Update(float deltaTimeSeconds)
             text_renderer->RenderText("Press space to release in the red zone.", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
         break;
         case 1:
-            text_renderer->RenderText(hints[q1], 50, 600, 0.2f, {0.99, 0.99, 0.99});
+            text_renderer->RenderText(hints[q1 + (cron_int%1)], 50, 600, 0.2f, {0.99, 0.99, 0.99});
         break;
         case 2:
             text_renderer->RenderText(hints[q2], 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
@@ -390,6 +444,7 @@ void Lab1::OnKeyPress(int key, int mods)
             {
                 chars_pressed.clear();
                 checkedWord = true;
+                cronometru = 0;
             }
 
         case 2:
@@ -403,6 +458,7 @@ void Lab1::OnKeyPress(int key, int mods)
             {
                 chars_pressed.clear();
                 checkedWord1 = true;
+                cronometru = 0;
             }
 
         case 3:
@@ -416,6 +472,7 @@ void Lab1::OnKeyPress(int key, int mods)
             {
                 chars_pressed.clear();
                 checkedWord2 = true;
+                cronometru = 0;
             }
         }
 
