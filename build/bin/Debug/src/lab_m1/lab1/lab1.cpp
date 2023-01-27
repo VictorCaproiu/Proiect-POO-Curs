@@ -68,7 +68,7 @@ vector<string> hints = {
     "CO______ _____",
     "CONT___ _____",
     "CONTROL _____",
-    "CONTROL BOA",
+    "CONTROL BOA__",
     "CONTROL BOARD",
     "2^3",
     "8",
@@ -91,7 +91,7 @@ constexpr int CAPTURED = 50;
 
 Lab1::Lab1()
 {
-    player = std::make_unique<Player>(glm::vec3(0, 0, 0), glm::vec3(0.99f, 0, 0));
+    player = std::make_unique<Player>(glm::vec3(0, 10, 0), glm::vec3(0.99f, 0, 0));
     meshes["player"] = player->generateModel();
 
     const auto camera = GetSceneCamera();
@@ -107,6 +107,9 @@ Lab1::Lab1()
     checkedWord2 = false;
     hint = false;
     intrebare_curenta = 0;
+    timp_limita = 0;
+    timp_hint = 0;
+
 
     text_renderer = new gfxc::TextRenderer(window->props.selfDir, window->GetResolution().x, window->GetResolution().y);
     text_renderer->Load(RESOURCE_PATH::FONTS + "\\" + "Hack-Bold.ttf", 128);
@@ -127,6 +130,9 @@ Lab1::Lab1()
 
     cronometru = 0;
     cronometru_afisare = 0;
+    cronometru_limita = 0;
+    menu = true;
+    max_hint = 0;
 }
 
 Lab1::~Lab1()
@@ -237,140 +243,243 @@ void Lab1::FrameStart()
 
 void Lab1::Update(float deltaTimeSeconds)
 {
-    cronometru += deltaTimeSeconds;
-    //cronometru = static_cast<int>(cronometru);
-    cron_int = (int)cronometru;
-    cronometru_afisare = (int)cronometru;
-    cout << cron_int << '\n';
+    //cronometru += deltaTimeSeconds;
+    //cronometru_limita += deltaTimeSeconds;
+    ////cronometru = static_cast<int>(cronometru);
+    //cron_int = (int)cronometru;
 
-    cron_int = cron_int / 10;
-    if (cron_int >= 4)
-        cron_int = 4;
+    //cronometru_afisare = (int)cronometru;
 
-    glm::mat3 model = glm::mat3(1);
-    model = glm::translate(model, player->position);
-    RenderMesh2D(meshes["player"], shaders["VertexColor"], model);
+    //cron_int = cron_int / 10;
+    //if (cron_int >= 4)
+    //    cron_int = 4;
 
-    RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { -25, -15 }), glm::vec3(0, 0, 0));
-    glm::mat3 circlePos = glm::mat3(1);
-    auto playerPos = player->position + glm::vec2(1.0, 1.0);
-    auto playerNeg = player->position - glm::vec2(1.0, 1.0);
-
-    if (playerNeg.x < -25 && -25 < playerPos.x && playerNeg.y < -15 && -15 < playerPos.y)
+    if (menu)
     {
-        hint = true;
-    }
-    else {
-        hint = false;
-    }
+        glm::mat3 model = glm::mat3(1);
+        model = glm::translate(model, player->position);
+        RenderMesh2D(meshes["player"], shaders["VertexColor"], model);
 
-    for (auto& pos : circlePositions)
-    {
+        RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { -10, 2 }), glm::vec3(0, 1, 0));
+        RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { 0, 2 }), glm::vec3(0, 1, 1));
+        RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { 10, 2 }), glm::vec3(0, 0, 0));
 
-        if (playerNeg.x < pos.x && pos.x < playerPos.x)
+        text_renderer->RenderText("Choose the difficulty", 430, 100, 0.29f, { 0.99, 0.99, 0.99 });
+
+        text_renderer->RenderText("Easy", 410, 280, 0.15f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("Time: 5 min", 375, 360, 0.12f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("20 sec for new hint", 340, 380, 0.12f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("Max 5 hints/question", 340, 400, 0.12f, { 0.99, 0.99, 0.99 });
+
+
+
+        text_renderer->RenderText("Medium", 605, 280, 0.15f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("Time: 4 min", 585, 360, 0.12f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("30 sec for new hint", 550, 380, 0.12f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("Max 4 hints/question", 550, 400, 0.12f, { 0.99, 0.99, 0.99 });
+
+
+        text_renderer->RenderText("Hard", 825, 280, 0.15f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("Time: 3 min", 800, 360, 0.12f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("40 sec for new hint", 775, 380, 0.12f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("Max 3 hints/question", 7755, 400, 0.12f, { 0.99, 0.99, 0.99 });
+
+
+
+        text_renderer->RenderText("Instructions", 500, 500, 0.29f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("Use WASD or arrow-keys to move", 400, 540, 0.15f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("Press space to release the balls", 400, 570, 0.15f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("Hover over the dif level you want", 400, 600, 0.15f, { 0.99, 0.99, 0.99 });
+
+
+
+
+        glm::mat3 circlePos = glm::mat3(1);
+        auto playerPos = player->position + glm::vec2(0.6, 0.6);
+        auto playerNeg = player->position - glm::vec2(0.6, 0.6);
+
+
+        // Easy mode
+        if (playerNeg.x < -10 && -10 < playerPos.x && playerNeg.y < 2 && 2 < playerPos.y)
         {
-            if (playerNeg.y < pos.y && pos.y < playerPos.y)
-            {
-                if (!player->isInDeliveryZone(deliveryPos1, deliveryPos2, deliveryNeg1, deliveryNeg2))
-                {
-                    pos.x = CAPTURED;
-                    capturedCircles++;
-                }
-            }
-        }
+            menu = false;
+            timp_limita = 300;
+            timp_hint = 20;
+            max_hint = 4;
 
-        if (pos.x != CAPTURED)
+        }
+        // Medium mode
+        else if (playerNeg.x < 0 && 0 < playerPos.x && playerNeg.y < 2 && 2 < playerPos.y)
         {
-            RenderMesh2D(meshes["circle"], shaders["VertexNormal"], glm::translate(circlePos, pos));
+            menu = false;
+            timp_limita = 240;
+            timp_hint = 30;
+            max_hint = 3;
         }
-    }
-
-    glm::mat3 deliveryZone = glm::mat3(1);
-    deliveryZone = glm::translate(deliveryZone, { -26, 11 });
-    deliveryZone = glm::scale(deliveryZone, { 3, 5 });
-
-    char* text = new char[30];
-
-    /*if (key == GLFW_KEY_C)
-    {
-        auto str = PATH_JOIN("file:///", window->props.selfDir, "Credits.pdf");
-        ShellExecute(0, 0, str.c_str(), 0, 0, SW_SHOW);
-    }*/
-
-    
-
-    text_renderer->RenderText("Time spent: " + to_string(cronometru_afisare) + " sec", 1050, 50, 0.15f, {0.99, 0.99, 0.99});
-    text_renderer->RenderText("Use WASD to move", 1000, 650, 0.15f, {0.99, 0.99, 0.99});
-
-
-    if (hint) {
-        switch (intrebare_curenta)
+        // Hard mode
+        else if (playerNeg.x < 10 && 10 < playerPos.x && playerNeg.y < 2 && 2 < playerPos.y)
         {
-        case 0:
-            text_renderer->RenderText("Press space to release in the red zone.", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
-        break;
-        case 1:
-            text_renderer->RenderText(hints[q1*5 + cron_int], 50, 600, 0.2f, {0.99, 0.99, 0.99});
-        break;
-        case 2:
-            text_renderer->RenderText(hints[q2*5 + cron_int], 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
-        break;
-        case 3:
-            text_renderer->RenderText(hints[q3*5 + cron_int], 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
-        break;
-        
-        default:
-            text_renderer->RenderText("The key is in front of you!", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
-            break;
+            menu = false;
+            timp_limita = 180;
+            timp_hint = 40;
+            max_hint = 2;
         }
+ 
 
-        
-        
-    }
-    else {
-        text_renderer->RenderText("Need a hint?", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
-    }
-
-    if (capturedCircles == 6)
-    {
-        if (checkedWord2)
-        {
-            sprintf(text, "Secret code: %d", magicNum);
-            RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { 5, 5 }), glm::vec3(0.4f, 0, 0.99f));
-            text_renderer->RenderText("Congratulations! Now you have to exit!", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
-            intrebare_curenta = 4;
-        }
-        else if (checkedWord1)
-        {
-            sprintf(text, "Secret code: %d", magicNum % 10000);
-            text_renderer->RenderText("You guessed it! Last one, we promise!", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
-            text_renderer->RenderText(questions[q3], 200, 130, 0.13f, { 0.99, 0.99, 0.99 });
-            intrebare_curenta = 3;
-        }
-        else if (checkedWord)
-        {
-            sprintf(text, "Secret code: %d", magicNum % 1000);
-            text_renderer->RenderText("You guessed it! Time for part 2", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
-            text_renderer->RenderText(questions[q2], 200, 130, 0.13f, { 0.99, 0.99, 0.99 });
-            intrebare_curenta = 2;
-        }
-        else
-        {
-            sprintf(text, "Secret code: %d", magicNum % 100);
-            text_renderer->RenderText(questions[q1], 200, 90, 0.13f, { 0.99, 0.99, 0.99 });
-            intrebare_curenta = 1;
-        }
     }
     else
     {
-        sprintf(text, "Secret code: %d", magicNum % 10);
-        cronometru = 0;
-    }
-    text_renderer->RenderText(text, 200, 40, 0.3f, { 0.99, 0.99, 0.99 });
-    delete text;
+        cronometru += deltaTimeSeconds;
+        cronometru_limita += deltaTimeSeconds;
+        //cronometru = static_cast<int>(cronometru);
+        cron_int = (int)cronometru;
 
-    RenderMesh2D(meshes["squareRed"], shaders["VertexColor"], deliveryZone);
-    RenderMesh2D(meshes["square"], shaders["VertexColor"], glm::scale(glm::mat3(1), { corners[0] + 0.7f, corners[1] + 0.7f }));
+        cronometru_afisare = (int)cronometru;
+
+        cron_int = cron_int / timp_hint;
+        if (cron_int >= max_hint)
+            cron_int = max_hint;
+
+        // de schimbat variabila
+        if (timp_limita - (int)cronometru_limita <= 0)
+        {
+            text_renderer->RenderText("Game Over! Your time has expired", 250, 300, 0.3f, { 0.99, 0.10, 0.10 });
+
+            if (timp_limita - (int)cronometru_limita <= -5)
+            {
+                exit(0);
+            }
+        }
+        else
+        {
+
+            glm::mat3 model = glm::mat3(1);
+            model = glm::translate(model, player->position);
+            RenderMesh2D(meshes["player"], shaders["VertexColor"], model);
+
+            RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { -25, -15 }), glm::vec3(0, 0, 0));
+            glm::mat3 circlePos = glm::mat3(1);
+            auto playerPos = player->position + glm::vec2(1.0, 1.0);
+            auto playerNeg = player->position - glm::vec2(1.0, 1.0);
+
+            if (playerNeg.x < -25 && -25 < playerPos.x && playerNeg.y < -15 && -15 < playerPos.y)
+            {
+                hint = true;
+            }
+            else {
+                hint = false;
+            }
+
+            for (auto& pos : circlePositions)
+            {
+
+                if (playerNeg.x < pos.x && pos.x < playerPos.x)
+                {
+                    if (playerNeg.y < pos.y && pos.y < playerPos.y)
+                    {
+                        if (!player->isInDeliveryZone(deliveryPos1, deliveryPos2, deliveryNeg1, deliveryNeg2))
+                        {
+                            pos.x = CAPTURED;
+                            capturedCircles++;
+                        }
+                    }
+                }
+
+                if (pos.x != CAPTURED)
+                {
+                    RenderMesh2D(meshes["circle"], shaders["VertexNormal"], glm::translate(circlePos, pos));
+                }
+            }
+
+            glm::mat3 deliveryZone = glm::mat3(1);
+            deliveryZone = glm::translate(deliveryZone, { -26, 11 });
+            deliveryZone = glm::scale(deliveryZone, { 3, 5 });
+
+            char* text = new char[30];
+
+            /*if (key == GLFW_KEY_C)
+            {
+                auto str = PATH_JOIN("file:///", window->props.selfDir, "Credits.pdf");
+                ShellExecute(0, 0, str.c_str(), 0, 0, SW_SHOW);
+            }*/
+
+
+
+            text_renderer->RenderText("Time left: " + to_string(timp_limita - (int)cronometru_limita) + " sec", 1050, 50, 0.15f, { 0.99, 0.99, 0.99 });
+            text_renderer->RenderText("Use WASD to move", 1000, 650, 0.15f, { 0.99, 0.99, 0.99 });
+
+
+            if (hint) {
+                switch (intrebare_curenta)
+                {
+                case 0:
+                    text_renderer->RenderText("Press space to release in the red zone.", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+                    break;
+                case 1:
+                    text_renderer->RenderText(hints[q1 * 5 + cron_int], 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+                    break;
+                case 2:
+                    text_renderer->RenderText(hints[q2 * 5 + cron_int], 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+                    break;
+                case 3:
+                    text_renderer->RenderText(hints[q3 * 5 + cron_int], 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+                    break;
+
+                default:
+                    text_renderer->RenderText("The key is in front of you!", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+                    break;
+                }
+
+
+
+            }
+            else {
+                text_renderer->RenderText("Need a hint?", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+            }
+
+            if (capturedCircles == 6)
+            {
+                if (checkedWord2)
+                {
+                    sprintf(text, "Secret code: %d", magicNum);
+                    RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { 5, 5 }), glm::vec3(0.4f, 0, 0.99f));
+                    text_renderer->RenderText("Congratulations! Now you have to exit!", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
+                    intrebare_curenta = 4;
+                }
+                else if (checkedWord1)
+                {
+                    sprintf(text, "Secret code: %d", magicNum % 10000);
+                    text_renderer->RenderText("You guessed it! Last one, we promise!", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
+                    text_renderer->RenderText(questions[q3], 200, 130, 0.13f, { 0.99, 0.99, 0.99 });
+                    intrebare_curenta = 3;
+                }
+                else if (checkedWord)
+                {
+                    sprintf(text, "Secret code: %d", magicNum % 1000);
+                    text_renderer->RenderText("You guessed it! Time for part 2", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
+                    text_renderer->RenderText(questions[q2], 200, 130, 0.13f, { 0.99, 0.99, 0.99 });
+                    intrebare_curenta = 2;
+                }
+                else
+                {
+                    sprintf(text, "Secret code: %d", magicNum % 100);
+                    text_renderer->RenderText(questions[q1], 200, 90, 0.13f, { 0.99, 0.99, 0.99 });
+                    intrebare_curenta = 1;
+                }
+            }
+            else
+            {
+                sprintf(text, "Secret code: %d", magicNum % 10);
+                cronometru = 0;
+            }
+            text_renderer->RenderText(text, 200, 40, 0.3f, { 0.99, 0.99, 0.99 });
+            delete text;
+
+            RenderMesh2D(meshes["squareRed"], shaders["VertexColor"], deliveryZone);
+            RenderMesh2D(meshes["square"], shaders["VertexColor"], glm::scale(glm::mat3(1), { corners[0] + 0.7f, corners[1] + 0.7f }));
+
+        }
+    }
 }
 
 void Lab1::FrameEnd()
@@ -381,19 +490,19 @@ void Lab1::OnInputUpdate(float deltaTime, int mods)
 {
     if (player->isInWindow(corners[0], corners[1]))
     {
-        if (window->KeyHold(GLFW_KEY_A))
+        if (window->KeyHold(GLFW_KEY_A) || window->KeyHold(GLFW_KEY_LEFT))
         {
             player->moveLeft(deltaTime * 15);
         }
-        if (window->KeyHold(GLFW_KEY_D))
+        if (window->KeyHold(GLFW_KEY_D) || window->KeyHold(GLFW_KEY_RIGHT))
         {
             player->moveRight(deltaTime * 15);
         }
-        if (window->KeyHold(GLFW_KEY_W))
+        if (window->KeyHold(GLFW_KEY_W) || window->KeyHold(GLFW_KEY_UP))
         {
             player->moveUp(deltaTime * 15);
         }
-        if (window->KeyHold(GLFW_KEY_S))
+        if (window->KeyHold(GLFW_KEY_S) || window->KeyHold(GLFW_KEY_DOWN))
         {
             player->moveDown(deltaTime * 15);
         }

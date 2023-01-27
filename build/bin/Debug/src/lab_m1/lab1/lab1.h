@@ -44,17 +44,24 @@ namespace m1
         int capturedCircles;
         int magicNum;
 
-        int intrebare_curenta, q1, q2, q3;
+        int intrebare_curenta, q1, q2, q3; //Indici pentru intrebarile curente
 
-        bool hint;
+        bool hint; //Verifica daca player ul este pe hint sau nu
 
-        bool checkedWord;
-        bool checkedWord1;
-        bool checkedWord2;
+        bool checkedWord;// True daca s a raspuns corect la a prima intrebare
+        bool checkedWord1;// True daca s a raspuns corect la a 2a intrebare
+        bool checkedWord2; // True daca s a raspuns corect la a 3a intrebare
+
+        bool menu; // True daca suntem in meniu, false daca nu suntem in meniu
 
         float cronometru;
         int cron_int;
         int cronometru_afisare;
+        int timp_limita;
+        int timp_hint;
+        int max_hint;
+        float cronometru_limita;
+
 
         glm::vec2 deliveryPos1 = glm::vec2(-28, 15);
         glm::vec2 deliveryPos2 = glm::vec2(-23, 15);

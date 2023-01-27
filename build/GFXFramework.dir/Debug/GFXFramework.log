@@ -1,26 +1,26 @@
 ﻿  lab1.cpp
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
 D:\GitHub Repos\Proiect-POO-Curs\deps\api\GLFW/glfw3.h(123): message : see previous definition of 'APIENTRY'
-D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(178,23): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(382,49): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(184,23): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(491,49): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(382,37): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(491,37): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
           with
           [
               _Ty=unsigned int
           ]
-D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(430,37): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(539,37): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
           with
           [
               _Ty=char
           ]
-D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(445,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(459,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(473,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(499,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(554,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(568,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(582,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\GitHub Repos\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(608,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   GFXFramework.vcxproj -> D:\GitHub Repos\Proiect-POO-Curs\build\bin\Debug\GFXFramework.exe
   Junction created for D:\GitHub Repos\Proiect-POO-Curs\build\bin\Debug\src <<===>> D:\GitHub Repos\Proiect-POO-Curs\src
   Junction created for D:\GitHub Repos\Proiect-POO-Curs\build\bin\Debug\assets <<===>> D:\GitHub Repos\Proiect-POO-Curs\assets
