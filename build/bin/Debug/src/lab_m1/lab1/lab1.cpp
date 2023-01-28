@@ -287,7 +287,6 @@ void Lab1::Update(float deltaTimeSeconds)
 
 
         text_renderer->RenderText("Instructions", 500, 500, 0.29f, { 0.99, 0.99, 0.99 });
-        text_renderer->RenderText("Use WASD or arrow-keys to move", 400, 540, 0.15f, { 0.99, 0.99, 0.99 });
         text_renderer->RenderText("Press space to release the balls", 400, 570, 0.15f, { 0.99, 0.99, 0.99 });
         text_renderer->RenderText("Hover over the dif level you want", 400, 600, 0.15f, { 0.99, 0.99, 0.99 });
 

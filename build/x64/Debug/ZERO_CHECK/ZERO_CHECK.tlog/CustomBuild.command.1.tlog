@@ -1,6 +1,6 @@
-^D:\GITHUB REPOS\PROIECT-POO-CURS\BUILD\CMAKEFILES\835FF24908F727C0BBC89AE4F0AEFE94\GENERATE.STAMP.RULE
+^C:\USERS\USER\DESKTOP\PROIECT-POO-CURS\BUILD\CMAKEFILES\4F682D6CBD93C3E63A5CE795D47B0947\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/GitHub Repos/Proiect-POO-Curs" "-BD:/GitHub Repos/Proiect-POO-Curs/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/GitHub Repos/Proiect-POO-Curs/build/GFXFramework.sln"
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/user/Desktop/Proiect-POO-Curs -BC:/Users/user/Desktop/Proiect-POO-Curs/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/user/Desktop/Proiect-POO-Curs/build/GFXFramework.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
