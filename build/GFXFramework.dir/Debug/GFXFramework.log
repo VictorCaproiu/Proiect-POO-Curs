@@ -1,21 +1,4 @@
-﻿  Building Custom Rule C:/Users/user/Desktop/Proiect-POO-Curs/CMakeLists.txt
-  camera_input.cpp
-  scene_input.cpp
-  simple_scene.cpp
-  text_renderer.cpp
-  engine.cpp
-  frame_buffer.cpp
-  gpu_buffers.cpp
-  mesh.cpp
-  shader.cpp
-  texture2D.cpp
-  texture_manager.cpp
-  input_controller.cpp
-  window_callbacks.cpp
-  window_object.cpp
-C:\Users\user\Desktop\Proiect-POO-Curs\src\core\window\window_object.cpp(409,47): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  world.cpp
-  lab1.cpp
+﻿  lab1.cpp
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
 C:\Users\user\Desktop\Proiect-POO-Curs\deps\api\GLFW/glfw3.h(123,1): message : see previous definition of 'APIENTRY'
 C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(184,23): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
@@ -38,29 +21,6 @@ C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(554,13): warning
 C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(568,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(582,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab1\lab1.cpp(608,17): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  obstacle.cpp
-  player.cpp
-  lab2.cpp
-  lab3.cpp
-  Generating Code...
-  Compiling...
-  lab3_vis2D.cpp
-  object2D.cpp
-  lab4.cpp
-C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab4\lab4.cpp(54,78): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\user\Desktop\Proiect-POO-Curs\src\lab_m1\lab4\lab4.cpp(54,58): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  lab5.cpp
-  lab6.cpp
-  lab7.cpp
-  lab8.cpp
-  lab9.cpp
-  main.cpp
-  gl_utils.cpp
-  text_utils.cpp
-  Generating Code...
-     Creating library C:/Users/user/Desktop/Proiect-POO-Curs/build/Debug/GFXFramework.lib and object C:/Users/user/Desktop/Proiect-POO-Curs/build/Debug/GFXFramework.exp
   GFXFramework.vcxproj -> C:\Users\user\Desktop\Proiect-POO-Curs\build\bin\Debug\GFXFramework.exe
-  The system cannot find the file specified.
   Junction created for C:\Users\user\Desktop\Proiect-POO-Curs\build\bin\Debug\src <<===>> C:\Users\user\Desktop\Proiect-POO-Curs\src
-  The system cannot find the file specified.
   Junction created for C:\Users\user\Desktop\Proiect-POO-Curs\build\bin\Debug\assets <<===>> C:\Users\user\Desktop\Proiect-POO-Curs\assets

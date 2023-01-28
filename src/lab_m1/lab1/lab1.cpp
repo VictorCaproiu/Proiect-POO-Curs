@@ -91,7 +91,7 @@ constexpr int CAPTURED = 50;
 
 Lab1::Lab1()
 {
-    player = std::make_unique<Player>(glm::vec3(0, 10, 0), glm::vec3(0.99f, 0, 0));
+    player = std::make_unique<Player>(glm::vec3(0, 7, 0), glm::vec3(0.99f, 0, 0));
     meshes["player"] = player->generateModel();
 
     const auto camera = GetSceneCamera();
@@ -282,11 +282,12 @@ void Lab1::Update(float deltaTimeSeconds)
         text_renderer->RenderText("Hard", 825, 280, 0.15f, { 0.99, 0.99, 0.99 });
         text_renderer->RenderText("Time: 3 min", 800, 360, 0.12f, { 0.99, 0.99, 0.99 });
         text_renderer->RenderText("40 sec for new hint", 775, 380, 0.12f, { 0.99, 0.99, 0.99 });
-        text_renderer->RenderText("Max 3 hints/question", 7755, 400, 0.12f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("Max 3 hints/question", 775, 400, 0.12f, { 0.99, 0.99, 0.99 });
 
 
 
-        text_renderer->RenderText("Instructions", 500, 500, 0.29f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("Instructions:", 500, 490, 0.29f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("Use WASD or arrow-keys to move", 400, 540, 0.15f, { 0.99, 0.99, 0.99 });
         text_renderer->RenderText("Press space to release the balls", 400, 570, 0.15f, { 0.99, 0.99, 0.99 });
         text_renderer->RenderText("Hover over the dif level you want", 400, 600, 0.15f, { 0.99, 0.99, 0.99 });
 
@@ -405,7 +406,7 @@ void Lab1::Update(float deltaTimeSeconds)
 
 
             text_renderer->RenderText("Time left: " + to_string(timp_limita - (int)cronometru_limita) + " sec", 1050, 50, 0.15f, { 0.99, 0.99, 0.99 });
-            text_renderer->RenderText("Use WASD to move", 1000, 650, 0.15f, { 0.99, 0.99, 0.99 });
+            
 
 
             if (hint) {
