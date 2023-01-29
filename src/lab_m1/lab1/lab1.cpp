@@ -231,7 +231,7 @@ void Lab1::Init()
 
     hint = false;
 
-    auto str = PATH_JOIN("file:///", window->props.selfDir, "Credits.pdf");
+    auto str = PATH_JOIN("file:///", window->props.selfDir,"src", "Credits.pdf");
     ShellExecute(0, 0, str.c_str(), 0, 0, SW_SHOW);
 }
 
