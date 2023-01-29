@@ -61,6 +61,8 @@ namespace m1
         int timp_hint;
         int max_hint;
         float cronometru_limita;
+        bool evadat;
+        int timp_ramas_evadat;
 
 
         glm::vec2 deliveryPos1 = glm::vec2(-28, 15);

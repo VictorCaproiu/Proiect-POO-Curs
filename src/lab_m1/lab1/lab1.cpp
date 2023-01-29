@@ -102,6 +102,8 @@ Lab1::Lab1()
 
     corners = { 29, 16 };
     capturedCircles = 0;
+    timp_ramas_evadat = NULL;
+    evadat = false;
     checkedWord = false;
     checkedWord1 = false;
     checkedWord2 = false;
@@ -350,6 +352,18 @@ void Lab1::Update(float deltaTimeSeconds)
                 exit(0);
             }
         }
+        else if (evadat) {   //ecranul de victorie
+            if (timp_ramas_evadat == NULL)
+                timp_ramas_evadat = timp_limita - (int)cronometru_limita;
+
+            text_renderer->RenderText("Congratulations! You escaped the room", 250, 300, 0.3f, { 0.10, 0.90, 0.10 });
+            text_renderer->RenderText("Remaining time: " + to_string(timp_ramas_evadat) + " sec", 260, 350, 0.22f, { 0.10, 0.70, 0.10 });
+
+            if (timp_limita - (int)cronometru_limita  <= timp_ramas_evadat - 5)
+            {
+                exit(0);
+            }
+        }
         else
         {
 
@@ -405,7 +419,7 @@ void Lab1::Update(float deltaTimeSeconds)
 
 
 
-            text_renderer->RenderText("Time left: " + to_string(timp_limita - (int)cronometru_limita) + " sec", 1050, 50, 0.15f, { 0.99, 0.99, 0.99 });
+            text_renderer->RenderText("Time left: " + to_string(timp_limita - (int)cronometru_limita) + " sec", 1010, 50, 0.15f, { 0.99, 0.99, 0.99 });
             
 
 
@@ -612,7 +626,8 @@ void Lab1::OnKeyPress(int key, int mods)
 
             if (numeros == magicNum)
             {
-                exit(0);
+                //exit(0);
+                evadat = true;
             }
         }
     };
