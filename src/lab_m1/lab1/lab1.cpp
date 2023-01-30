@@ -107,6 +107,7 @@ Lab1::Lab1()
     capturedCircles = 0;
     timp_ramas_evadat = NULL;
     evadat = false;
+    exit_open = false;
 
     checkedWord = false;
     checkedWord1 = false;
@@ -379,8 +380,8 @@ void Lab1::Update(float deltaTimeSeconds)
         if (cron_int >= max_hint)
             cron_int = max_hint;
 
-        // de schimbat variabila
-        if (timp_limita - (int)cronometru_limita <= 0)
+        // de schimbat variabila  <-- ce inseamna comentariul asta catalin?
+        if (timp_limita - (int)cronometru_limita <= 0)  //ecranul de game over
         {
             text_renderer->RenderText("Game Over! Your time has expired", 250, 300, 0.3f, { 0.99, 0.10, 0.10 });
 
@@ -401,7 +402,7 @@ void Lab1::Update(float deltaTimeSeconds)
                 exit(0);
             }
         }
-        else
+        else  // daca e inca in timpul jocului
         {
 
             glm::mat3 model = glm::mat3(1);
@@ -448,14 +449,6 @@ void Lab1::Update(float deltaTimeSeconds)
 
             char* text = new char[30];
 
-            /*if (key == GLFW_KEY_C)
-            {
-                auto str = PATH_JOIN("file:///", window->props.selfDir, "Credits.pdf");
-                ShellExecute(0, 0, str.c_str(), 0, 0, SW_SHOW);
-            }*/
-
-
-
             text_renderer->RenderText("Time left: " + to_string(timp_limita - (int)cronometru_limita) + " sec", 1010, 50, 0.15f, { 0.99, 0.99, 0.99 });
             
 
@@ -493,7 +486,11 @@ void Lab1::Update(float deltaTimeSeconds)
                 if (checkedWord2)
                 {
                     sprintf(text, "Secret code: %d", magicNum);
-                    RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { 5, 5 }), glm::vec3(0.4f, 0, 0.99f));
+                    if(!exit_open)
+                        RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { 5, 5 }), glm::vec3(0.4f, 0, 0.99f)); //exit door (inchisa)
+                    else
+                        RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { 5, 5 }), glm::vec3(0.99, 0.99, 0.99)); //exit door (deschisa)
+
                     text_renderer->RenderText("Congratulations! Now you have to exit!", 200, 90, 0.2f, { 0.99, 0.99, 0.99 });
                     intrebare_curenta = 4;
                 }
@@ -528,6 +525,11 @@ void Lab1::Update(float deltaTimeSeconds)
 
             RenderMesh2D(meshes["squareRed"], shaders["VertexColor"], deliveryZone);
             RenderMesh2D(meshes["square"], shaders["VertexColor"], glm::scale(glm::mat3(1), { corners[0] + 0.7f, corners[1] + 0.7f }));
+
+            if (playerNeg.x < 5 && 5 < playerPos.x && playerNeg.y < 5 && 5 < playerPos.y && exit_open) //daca e pe usa de iesire deschisa
+            {
+                evadat = true;
+            }
 
         }
     }
@@ -663,8 +665,7 @@ void Lab1::OnKeyPress(int key, int mods)
 
             if (numeros == magicNum)
             {
-                //exit(0);
-                evadat = true;
+                exit_open = true;
             }
         }
     };

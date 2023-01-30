@@ -64,6 +64,7 @@ namespace m1
         int max_hint;
         float cronometru_limita;
         bool evadat;
+        bool exit_open;
         int timp_ramas_evadat;
 
 
