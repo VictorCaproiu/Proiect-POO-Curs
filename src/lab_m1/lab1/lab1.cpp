@@ -91,7 +91,7 @@ constexpr int CAPTURED = 50;
 
 Lab1::Lab1()
 {
-    player = std::make_unique<Player>(glm::vec3(0, 7, 0), glm::vec3(0.99f, 0, 0));
+    player = std::make_unique<Player>(glm::vec3(0, -10, 0), glm::vec3(0.99f, 0, 0));
     meshes["player"] = player->generateModel();
 
     const auto camera = GetSceneCamera();
@@ -100,13 +100,18 @@ Lab1::Lab1()
     camera->Update();
     GetCameraInput()->SetActive(false);
 
+    show_credits = false;
+
     corners = { 29, 16 };
+
     capturedCircles = 0;
     timp_ramas_evadat = NULL;
     evadat = false;
+
     checkedWord = false;
     checkedWord1 = false;
     checkedWord2 = false;
+
     hint = false;
     intrebare_curenta = 0;
     timp_limita = 0;
@@ -133,7 +138,8 @@ Lab1::Lab1()
     cronometru = 0;
     cronometru_afisare = 0;
     cronometru_limita = 0;
-    menu = true;
+    menu = false;
+    title_screen = true;
     max_hint = 0;
 }
 
@@ -232,7 +238,8 @@ void Lab1::Init()
     hint = false;
 
     auto str = PATH_JOIN("file:///", window->props.selfDir,"src", "Credits.pdf");
-    ShellExecute(0, 0, str.c_str(), 0, 0, SW_SHOW);
+    if(show_credits)
+        ShellExecute(0, 0, str.c_str(), 0, 0, SW_SHOW);
 }
 
 void Lab1::FrameStart()
@@ -256,7 +263,37 @@ void Lab1::Update(float deltaTimeSeconds)
     //if (cron_int >= 4)
     //    cron_int = 4;
 
-    if (menu)
+    auto playerPos = player->position + glm::vec2(0.6, 0.6);
+    auto playerNeg = player->position - glm::vec2(0.6, 0.6);
+
+    if (title_screen) {
+        glm::mat3 model = glm::mat3(1);
+        model = glm::translate(model, player->position);
+        RenderMesh2D(meshes["player"], shaders["VertexColor"], model);
+
+        if (playerNeg.x < 0 && 0 < playerPos.x && playerNeg.y < -3 && -3 < playerPos.y)  //daca e pe butonul de play
+        {
+            title_screen = false;
+            menu = true;
+        }
+
+        if (playerNeg.x < 25 && 25 < playerPos.x && playerNeg.y < -14 && -14 < playerPos.y) //daca e pe butonul de credits
+        {
+            text_renderer->RenderText("Credits list TODO", 50, 100, 0.15f, { 0.99, 0.99, 0.99 });
+        }
+        else {
+            text_renderer->RenderText("Escape Room Game", 300, 200, 0.6f, { 0.90, 0.90, 0.10 });
+            text_renderer->RenderText("Play", 590, 400, 0.35f, { 0.10, 0.90, 0.10 });
+        }
+
+        
+        text_renderer->RenderText("Use WASD or arrow-keys to move", 50, 650, 0.15f, { 0.99, 0.99, 0.99 });
+        text_renderer->RenderText("Credits", 1100, 650, 0.2f, { 0.90, 0.90, 0.90 });
+
+        
+
+    }
+    else if (menu) //daca se afla in meniul de selectare a dificultatii
     {
         glm::mat3 model = glm::mat3(1);
         model = glm::translate(model, player->position);
@@ -297,8 +334,8 @@ void Lab1::Update(float deltaTimeSeconds)
 
 
         glm::mat3 circlePos = glm::mat3(1);
-        auto playerPos = player->position + glm::vec2(0.6, 0.6);
-        auto playerNeg = player->position - glm::vec2(0.6, 0.6);
+        /*auto playerPos = player->position + glm::vec2(0.6, 0.6);
+        auto playerNeg = player->position - glm::vec2(0.6, 0.6);*/
 
 
         // Easy mode
@@ -329,7 +366,7 @@ void Lab1::Update(float deltaTimeSeconds)
  
 
     }
-    else
+    else //daca se afla in joc
     {
         cronometru += deltaTimeSeconds;
         cronometru_limita += deltaTimeSeconds;

@@ -43,6 +43,7 @@ namespace m1
 
         int capturedCircles;
         int magicNum;
+        bool show_credits;
 
         int intrebare_curenta, q1, q2, q3; //Indici pentru intrebarile curente
 
@@ -53,6 +54,7 @@ namespace m1
         bool checkedWord2; // True daca s a raspuns corect la a 3a intrebare
 
         bool menu; // True daca suntem in meniu, false daca nu suntem in meniu
+        bool title_screen;
 
         float cronometru;
         int cron_int;
