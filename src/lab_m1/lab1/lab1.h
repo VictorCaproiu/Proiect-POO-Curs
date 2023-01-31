@@ -67,6 +67,8 @@ namespace m1
         bool exit_open;
         int timp_ramas_evadat;
 
+        std::string raspuns;
+
 
         glm::vec2 deliveryPos1 = glm::vec2(-28, 15);
         glm::vec2 deliveryPos2 = glm::vec2(-23, 15);
