@@ -20,3 +20,14 @@ Deci .sln-ul nu se pastreaza in repo, dar orice schimbare pe care o faceti in el
 In pricipiu vom lucra doar in fisierele din src/lab_m1/lab1 si orice commit va fi legat de ele.  📄
 
 Daca stricati ceva nu-i jale si putem doar sa dam revert la ultimul commit bun.  👍
+
+============================================================================================
+
+TODO List:
+
+✅  Title screen  
+⬜  Input display in timpul jocului  
+⬜  Implemantarea de fonturi diferite  
+⬜  Ajustarea hitboxului pt anumite butoane  
+⬜  Buton "Back" pt revenirea la titel screen  
+⬜  Completat sectiunea de credits din title screen  
