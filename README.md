@@ -29,5 +29,5 @@ TODO List:
 ⬜  Input display in timpul jocului  
 ⬜  Implemantarea de fonturi diferite  
 ⬜  Ajustarea hitboxului pt anumite butoane  
-⬜  Buton "Back" pt revenirea la titel screen  
+⬜  Buton "Back" pt revenirea la title screen  
 ⬜  Completat sectiunea de credits din title screen  
