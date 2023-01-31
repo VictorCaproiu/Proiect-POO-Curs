@@ -331,7 +331,7 @@ void Lab1::Update(float deltaTimeSeconds)
 		text_renderer->RenderText("Press space to release the balls", 400, 570, 0.15f, { 0.99, 0.99, 0.99 });
 		text_renderer->RenderText("Hover over the dif level you want", 400, 600, 0.15f, { 0.99, 0.99, 0.99 });
 
-
+		text_renderer->RenderText("(Back)", 50, 650, 0.2f, { 0.99, 0.99, 0.99 });
 
 
 		glm::mat3 circlePos = glm::mat3(1);
@@ -364,7 +364,13 @@ void Lab1::Update(float deltaTimeSeconds)
 			timp_hint = 40;
 			max_hint = 2;
 		}
- 
+		// Back
+		else if (playerNeg.x < -26 && -26 < playerPos.x && playerNeg.y < -14 && -14 < playerPos.y)
+		{
+			menu = false;
+			title_screen = true;
+		}
+		//RenderMesh2D(meshes["player"], glm::translate(glm::mat3(1), { -26, -14 }), glm::vec3(0, 0, 0));   pozitia hitboxului vizualizata
 
 	}
 	else //daca se afla in joc
