@@ -38,7 +38,8 @@ namespace m1
 
         gfxc::TextRenderer* text_renderer;
 
-        std::vector<char> chars_pressed;
+        //std::vector<char> chars_pressed;
+        std::string chars_pressed;
         std::vector<int> nums_pressed;
 
         int capturedCircles;

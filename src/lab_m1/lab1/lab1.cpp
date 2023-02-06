@@ -278,10 +278,18 @@ void Lab1::Update(float deltaTimeSeconds)
 			menu = true;
 		}
 
-		if (playerNeg.x < 25 && 25 < playerPos.x && playerNeg.y < -14 && -14 < playerPos.y) //daca e pe butonul de credits
+		if (playerNeg.x < 25 && 23 < playerPos.x && playerNeg.y < -13.5 && -14.5 < playerPos.y) //daca e pe butonul de credits
 		{
-			text_renderer->RenderText("Credits list TODO", 50, 100, 0.15f, { 0.99, 0.99, 0.99 });
+			text_renderer->RenderText("Escape Room Game", 300, 200, 0.6f, { 0.90, 0.90, 0.10 });
+			text_renderer->RenderText("Play", 590, 400, 0.35f, { 0.10, 0.90, 0.10 });
+
+			auto str = PATH_JOIN("file:///", window->props.selfDir, "src", "Credits.pdf");
+			if(!show_credits)
+				ShellExecute(0, 0, str.c_str(), 0, 0, SW_SHOW);
+			show_credits = true;
+			
 		}
+
 		else {
 			text_renderer->RenderText("Escape Room Game", 300, 200, 0.6f, { 0.90, 0.90, 0.10 });
 			text_renderer->RenderText("Play", 590, 400, 0.35f, { 0.10, 0.90, 0.10 });
@@ -430,7 +438,45 @@ void Lab1::Update(float deltaTimeSeconds)
 				hint = false;
 			}
 
-			text_renderer->RenderText("Input: " + raspuns, 700, 680, 0.15f, { 0.99, 0.99, 0.99 });
+			switch (intrebare_curenta)
+			{
+			case 1:
+				if (chars_pressed.size() <= answers[q1].size())
+				{
+					string cuvant = chars_pressed;
+					text_renderer->RenderText("Input: " + cuvant, 700, 680, 0.15f, { 0.99, 0.99, 0.99 });
+				}
+				else
+				{
+					text_renderer->RenderText("Input: " + raspuns, 700, 680, 0.15f, { 0.99, 0.99, 0.99 });
+
+				}
+
+			case 2:
+				if (chars_pressed.size() <=answers[q2].size())
+				{
+					string cuvant = chars_pressed;
+					text_renderer->RenderText("Input: " + cuvant, 700, 680, 0.15f, { 0.99, 0.99, 0.99 });
+				}
+				else
+				{
+					text_renderer->RenderText("Input: " + raspuns, 700, 680, 0.15f, { 0.99, 0.99, 0.99 });
+
+				}
+
+			case 3:
+				if (chars_pressed.size() <= answers[q3].size())
+				{
+					string cuvant = chars_pressed;
+					text_renderer->RenderText("Input: " + cuvant, 700, 680, 0.15f, { 0.99, 0.99, 0.99 });
+				}
+				else
+				{
+					text_renderer->RenderText("Input: " + raspuns, 700, 680, 0.15f, { 0.99, 0.99, 0.99 });
+
+				}
+			}
+
 
 			for (auto& pos : circlePositions)
 			{
@@ -480,7 +526,7 @@ void Lab1::Update(float deltaTimeSeconds)
 					break;
 
 				default:
-					text_renderer->RenderText("The key is in front of you!", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
+					text_renderer->RenderText("Insert the key. The key is in front of you!", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
 					break;
 				}
 
