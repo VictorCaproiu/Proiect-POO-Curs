@@ -40,11 +40,12 @@ namespace m1
 
         //std::vector<char> chars_pressed;
         std::string chars_pressed;
-        std::vector<int> nums_pressed;
+        std::string nums_pressed;
 
         int capturedCircles;
         int magicNum;
         bool show_credits;
+        int haubau;
 
         int intrebare_curenta, q1, q2, q3; //Indici pentru intrebarile curente
 

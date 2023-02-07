@@ -15,7 +15,7 @@ vector<string> questions = { "Recruitment is based on the manager's capacity to 
 							"The final decision-making stage in the recruitment process is called _______",
 							"The two types of ________ evaluation are: individual and team-based.",
 							"Which organizational theory states that workers are motivated by a sense of commitment?",
-							"What is the name of the graph that indicates the level of involvement and responsibility of employees?",
+							//"What is the name of the graph that indicates the level of involvement and responsibility of employees?",
 							"What percentage of the time does a manager spend communicating?",
 							"The group in charge of reviewing the technical specifications and authorizing changes is called:_____ _____",
 							"The number of steps necessary to establish a communication plan.",
@@ -27,7 +27,7 @@ vector<string> answers = {
 	"SELECTION",
 	"PERFORMANCE",
 	"Z THEORY",
-	"RESPONSIBLE ACCOUNTABLE CONSULTED INFORMED",
+	//"RESPONSIBLE ACCOUNTABLE CONSULTED INFORMED",
 	"805",
 	"CONTROL BOARD",
 	"8",
@@ -55,11 +55,11 @@ vector<string> hints = {
 	"Z THE___",
 	"Z THEO__",
 	"Z THEORY",
-	"RESPONSIBLE __________ ________ ________",
+	/*"RESPONSIBLE __________ ________ ________",
 	"RESPONSIBLE ACCOUNTABLE _________ ________",
 	"RESPONSIBLE ACCOUNTABLE CONSULTED _______",
 	"RESPONSIBLE ACCOUNTABLE CONSULTED INF_____",
-	"RESPONSIBLE ACCOUNTABLE CONSULTED INFORMED",
+	"RESPONSIBLE ACCOUNTABLE CONSULTED INFORMED",*/
 	">70%/",
 	">70% && <90%",
 	"80%",
@@ -124,16 +124,16 @@ Lab1::Lab1()
 
 	magicNum = rand() % 88889 + 11111;
 
-	q1 = rand() % 10;
+	q1 = rand() % questions.size();
 
 	do
 	{
-		q2 = rand() % 10;
+		q2 = rand() % questions.size();
 	} while (q1 == q2);
 
 	do
 	{
-		q3 = rand() % 10;
+		q3 = rand() % questions.size();
 	} while (q3 == q1 || q3 == q2);
 
 	cronometru = 0;
@@ -451,6 +451,7 @@ void Lab1::Update(float deltaTimeSeconds)
 					text_renderer->RenderText("Input: " + raspuns, 700, 680, 0.15f, { 0.99, 0.99, 0.99 });
 
 				}
+				break;
 
 			case 2:
 				if (chars_pressed.size() <=answers[q2].size())
@@ -463,6 +464,7 @@ void Lab1::Update(float deltaTimeSeconds)
 					text_renderer->RenderText("Input: " + raspuns, 700, 680, 0.15f, { 0.99, 0.99, 0.99 });
 
 				}
+				break;
 
 			case 3:
 				if (chars_pressed.size() <= answers[q3].size())
@@ -475,6 +477,31 @@ void Lab1::Update(float deltaTimeSeconds)
 					text_renderer->RenderText("Input: " + raspuns, 700, 680, 0.15f, { 0.99, 0.99, 0.99 });
 
 				}
+				break;
+
+			case 4:
+				if (chars_pressed.size() > 5)
+				{
+					haubau = (int)cronometru_limita;
+					chars_pressed.clear();
+				}
+
+				cout << "Cron limita: " << cronometru_limita;
+				cout << "HauBau: " << haubau;
+				cout << "In afara IF ului: " << (int)cronometru_limita - haubau << '\n';
+
+
+				if ((int)cronometru_limita - haubau < 1)
+				{
+					text_renderer->RenderText("Input: Try again! ", 700, 680, 0.15f, { 0.99, 0.99, 0.99 });
+					cout << (int)cronometru_limita - haubau << '\n';
+				}
+				else {
+					string cuvant = chars_pressed;
+					text_renderer->RenderText("Input: " + cuvant, 700, 680, 0.15f, { 0.99, 0.99, 0.99 });
+				}
+
+				break;
 			}
 
 
@@ -537,7 +564,7 @@ void Lab1::Update(float deltaTimeSeconds)
 				text_renderer->RenderText("Need a hint?", 50, 600, 0.2f, { 0.99, 0.99, 0.99 });
 			}
 
-			if (capturedCircles == 6)
+			if (capturedCircles >= 6)
 			{
 				if (checkedWord2)
 				{
@@ -640,7 +667,7 @@ void Lab1::OnKeyPress(int key, int mods)
 		}
 	}
 
-	if (capturedCircles == 6)
+	if (capturedCircles >= 6)
 	{
 		static int pressedChars = 0;
 		if ((GLFW_KEY_A <= key && key <= GLFW_KEY_Z) || key == 32 || (key >= 48 && key <= 57))
@@ -655,6 +682,11 @@ void Lab1::OnKeyPress(int key, int mods)
 		cout << "\n";
 
 		raspuns = "";
+
+		if (GLFW_KEY_BACKSPACE == key && chars_pressed.size() > 0)
+		{
+			chars_pressed.pop_back();
+		}
 
 		switch (intrebare_curenta)
 		{
