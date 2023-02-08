@@ -1,0 +1,10 @@
+^D:\GITHUB REPOS\PROIECT-POO-CURS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/GitHub Repos/Proiect-POO-Curs" "-BD:/GitHub Repos/Proiect-POO-Curs/build" --check-stamp-file "D:/GitHub Repos/Proiect-POO-Curs/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
