@@ -45,7 +45,7 @@ namespace m1
         int capturedCircles;
         int magicNum;
         bool show_credits;
-        int haubau;
+        int Timp_secret_code;
 
         int intrebare_curenta, q1, q2, q3; //Indici pentru intrebarile curente
 
@@ -68,13 +68,14 @@ namespace m1
         bool evadat;
         bool exit_open;
         int timp_ramas_evadat;
+        float punctaj_final;
 
         std::string raspuns;
 
 
-        glm::vec2 deliveryPos1 = glm::vec2(-28, 15);
-        glm::vec2 deliveryPos2 = glm::vec2(-23, 15);
-        glm::vec2 deliveryNeg1 = glm::vec2(-28, 6);
+        glm::vec2 deliveryPos1 = glm::vec2(-29, 16);
+        glm::vec2 deliveryPos2 = glm::vec2(-23, 16);
+        glm::vec2 deliveryNeg1 = glm::vec2(-29, 6);
         glm::vec2 deliveryNeg2 = glm::vec2(-23, 6);
 
 

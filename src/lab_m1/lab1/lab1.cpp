@@ -210,13 +210,14 @@ void Lab1::Init()
 		rnd = rand() % 2;
 		int signY = rnd == 1 ? rnd : -1;
 
-		int x = rand() % (corners[0] - 1) + 1;
+		int x = rand() % (-21 - 1) + 1;
 		x *= signX;
 
-		int y = rand() % (corners[1] - 1) + 1;
+		int y = rand() % (7 - 1) + 1;
 		y *= signY;
 
 		circlePositions.emplace_back(x, y);
+
 	}
 
 	for (int i = 0; i < 3; i++)
@@ -280,23 +281,48 @@ void Lab1::Update(float deltaTimeSeconds)
 
 		if (playerNeg.x < 25 && 23 < playerPos.x && playerNeg.y < -13.5 && -14.5 < playerPos.y) //daca e pe butonul de credits
 		{
-			text_renderer->RenderText("Escape Room Game", 300, 200, 0.6f, { 0.90, 0.90, 0.10 });
-			text_renderer->RenderText("Play", 590, 400, 0.35f, { 0.10, 0.90, 0.10 });
+			text_renderer->RenderText("Project title: BOOSTING SUSTAINABLE DIGITAL EDUCATION FOR EUROPEAN UNIVERSITIES", 20, 50, 0.2f, { 0.90, 0.90, 0.10 });
+			text_renderer->RenderText("Erasmus +", 20, 80, 0.2f, { 0.90, 0.90, 0.10 });
 
-			auto str = PATH_JOIN("file:///", window->props.selfDir, "src", "Credits.pdf");
+			text_renderer->RenderText("This application was developed by the following students from", 10, 370, 0.15f, { 0.10, 0.90, 0.10 });
+			text_renderer->RenderText("University POLITEHNICA Bucharest / Automatic Control & Computer Science Faculty ", 10, 400, 0.15f, { 0.10, 0.90, 0.10 });
+			text_renderer->RenderText("within the Erasmus+ Project 2020-1-CZ01-KA226-HE-094408", 10, 430, 0.15f, { 0.10, 0.90, 0.10 });
+
+			text_renderer->RenderText("-Andrei Cristian Catalin", 10, 460, 0.13f, { 0.10, 0.90, 0.10 });
+
+			text_renderer->RenderText("-Caproiu Victor", 10, 490, 0.13f, { 0.10, 0.90, 0.10 });
+
+			text_renderer->RenderText("-Cirstea Iuliana", 10, 520, 0.13f, { 0.10, 0.90, 0.10 });
+
+			text_renderer->RenderText("-Istrati Raluca", 10, 550, 0.13f, { 0.10, 0.90, 0.10 });
+
+			text_renderer->RenderText("-Popaz Lucian", 10, 580, 0.13f, { 0.10, 0.90, 0.10 });
+
+			text_renderer->RenderText("-Sanda Rares", 10, 610, 0.13f, { 0.10, 0.90, 0.10 });
+
+			text_renderer->RenderText("-Satmar Elena", 10, 640, 0.13f, { 0.10, 0.90, 0.10 });
+
+			text_renderer->RenderText("Teachers: M. Caramihai & Daniel Chis", 10, 670, 0.13f, { 0.10, 0.90, 0.10 });
+
+			
+
+			/*auto str = PATH_JOIN("file:///", window->props.selfDir, "src", "Credits.pdf");
 			if(!show_credits)
 				ShellExecute(0, 0, str.c_str(), 0, 0, SW_SHOW);
-			show_credits = true;
+			show_credits = true;*/
+
+
 			
 		}
 
 		else {
 			text_renderer->RenderText("Escape Room Game", 300, 200, 0.6f, { 0.90, 0.90, 0.10 });
 			text_renderer->RenderText("Play", 590, 400, 0.35f, { 0.10, 0.90, 0.10 });
+			text_renderer->RenderText("Use WASD or arrow-keys to move", 50, 650, 0.15f, { 0.99, 0.99, 0.99 });
+
 		}
 
 		
-		text_renderer->RenderText("Use WASD or arrow-keys to move", 50, 650, 0.15f, { 0.99, 0.99, 0.99 });
 		text_renderer->RenderText("Credits", 1100, 650, 0.2f, { 0.90, 0.90, 0.90 });
 
 		
@@ -410,8 +436,11 @@ void Lab1::Update(float deltaTimeSeconds)
 			if (timp_ramas_evadat == NULL)
 				timp_ramas_evadat = timp_limita - (int)cronometru_limita;
 
+			punctaj_final = (timp_ramas_evadat / 10) * timp_hint * timp_hint;
+
 			text_renderer->RenderText("Congratulations! You escaped the room", 250, 300, 0.3f, { 0.10, 0.90, 0.10 });
 			text_renderer->RenderText("Remaining time: " + to_string(timp_ramas_evadat) + " sec", 260, 350, 0.22f, { 0.10, 0.70, 0.10 });
+			text_renderer->RenderText("Your score: " + to_string((int)punctaj_final) + " points", 260, 400, 0.22f, { 0.10, 0.70, 0.10 });
 
 			if (timp_limita - (int)cronometru_limita  <= timp_ramas_evadat - 5)
 			{
@@ -480,21 +509,16 @@ void Lab1::Update(float deltaTimeSeconds)
 				break;
 
 			case 4:
-				if (chars_pressed.size() > 5)
+				if (chars_pressed.size() >= 5 && exit_open == false)
 				{
-					haubau = (int)cronometru_limita;
+					Timp_secret_code = (int)cronometru_limita;
 					chars_pressed.clear();
 				}
 
-				cout << "Cron limita: " << cronometru_limita;
-				cout << "HauBau: " << haubau;
-				cout << "In afara IF ului: " << (int)cronometru_limita - haubau << '\n';
-
-
-				if ((int)cronometru_limita - haubau < 1)
+				if ((int)cronometru_limita - Timp_secret_code < 1)
 				{
 					text_renderer->RenderText("Input: Try again! ", 700, 680, 0.15f, { 0.99, 0.99, 0.99 });
-					cout << (int)cronometru_limita - haubau << '\n';
+					cout << (int)cronometru_limita - Timp_secret_code << '\n';
 				}
 				else {
 					string cuvant = chars_pressed;
